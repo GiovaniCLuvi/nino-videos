@@ -45,6 +45,11 @@ def main():
         for rede, st in post.get("redes", {}).items():
             if st.get("status") not in ("pendente", "erro") or st.get("tentativas", 0) >= MAX_TENTATIVAS:
                 continue
+            if rede in cfg.get("redes_pausadas", []):
+                if st.get("status") != "pausada":
+                    st.update(status="pausada", motivo="rede pausada em config.redes_pausadas")
+                    mudou_fila = True
+                continue
             if agora_ - quando > atraso_max:
                 st.update(status="perdido", motivo=f"passou mais de {atraso_max} do horário sem conseguir postar")
                 mudou_fila = True
