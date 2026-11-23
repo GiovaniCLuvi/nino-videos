@@ -36,6 +36,8 @@ def main():
     cofre = ler_cofre()
     mudou_fila = mudou_cofre = False
     agora_ = agora()
+    if simular and cfg.get("tiktok_modo") == "zernio":
+        print("Zernio: conta TikTok conectada =", zernio.conta_tiktok())
 
     for post in fila.get("posts", []):
         quando = datetime.fromisoformat(post["quando"])
@@ -64,19 +66,28 @@ def main():
             if simular:
                 print("   (simulação: não postei)")
                 continue
+            cfg_rede = cfg
             try:
                 if via_zernio:
-                    res = zernio.postar(post, cfg)
-                    st.clear()
-                    st.update(status="postado", em=agora().isoformat(timespec="minutes"), **res)
-                    print("   ok:", res)
-                    mudou_fila = True
-                    continue
+                    try:
+                        res = zernio.postar(post, cfg)
+                        st.clear()
+                        st.update(status="postado", em=agora().isoformat(timespec="minutes"), **res)
+                        print("   ok:", res)
+                        mudou_fila = True
+                        continue
+                    except Exception as ez:
+                        traceback.print_exc()
+                        if "tiktok" not in cofre:
+                            raise
+                        print("   Zernio falhou, plano B: rascunho no TikTok")
+                        cfg_rede = {**cfg, "tiktok_modo": "rascunho"}
+                        st["zernio_erro"] = str(ez)[:300]
                 if arquivo is None and rede != "instagram":
                     arquivo = baixar(post["video"], os.path.join(tempfile.gettempdir(), "video.mp4"))
                 if rede == "instagram":
                     instagram.renovar(cofre)
-                res = REDES[rede].postar(cofre, post, arquivo, cfg)
+                res = REDES[rede].postar(cofre, post, arquivo, cfg_rede)
                 st.clear()
                 st.update(status="postado", em=agora().isoformat(timespec="minutes"), **res)
                 if rede == "tiktok" and res.get("modo") == "rascunho":
