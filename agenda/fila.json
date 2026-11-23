@@ -11,6 +11,19 @@
   },
   "posts": [
     {
+      "id": "teste-tiktok-rascunho",
+      "quando": "2026-11-23T16:30:00-03:00",
+      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/claude/project-thread-8oiym3/videos/07-as-pedrinhas-da-mentira.mp4",
+      "titulo": "TESTE do robô",
+      "legenda": "TESTE do robô (pode apagar)",
+      "comentario": "",
+      "redes": {
+        "tiktok": {
+          "status": "pendente"
+        }
+      }
+    },
+    {
       "id": "regra-08-as-pedrinhas-da-mentira",
       "quando": "2026-11-24T18:00:00-03:00",
       "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/claude/project-thread-8oiym3/videos/07-as-pedrinhas-da-mentira.mp4",
