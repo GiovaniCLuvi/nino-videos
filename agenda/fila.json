@@ -3,7 +3,7 @@
   "config": {
     "atraso_max_horas": 1,
     "youtube_privacidade": "public",
-    "tiktok_modo": "rascunho",
+    "tiktok_modo": "zernio",
     "tiktok_privacidade": "SELF_ONLY",
     "redes_pausadas": [
       "youtube"
