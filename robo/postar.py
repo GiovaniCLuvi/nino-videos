@@ -6,7 +6,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 import requests
 from comum import agora, ler_cofre, gravar_cofre, ler_fila, gravar_fila, baixar
-import youtube, instagram, tiktok
+import youtube, instagram, tiktok, zernio
 
 REDES = {"youtube": youtube, "instagram": instagram, "tiktok": tiktok}
 MAX_TENTATIVAS = 3
@@ -54,7 +54,8 @@ def main():
                 st.update(status="perdido", motivo=f"passou mais de {atraso_max} do horário sem conseguir postar")
                 mudou_fila = True
                 continue
-            if rede not in cofre:
+            via_zernio = rede == "tiktok" and cfg.get("tiktok_modo") == "zernio"
+            if rede not in cofre and not via_zernio:
                 if st.get("motivo") != "rede ainda não conectada":
                     st["motivo"] = "rede ainda não conectada"
                     mudou_fila = True
@@ -64,6 +65,13 @@ def main():
                 print("   (simulação: não postei)")
                 continue
             try:
+                if via_zernio:
+                    res = zernio.postar(post, cfg)
+                    st.clear()
+                    st.update(status="postado", em=agora().isoformat(timespec="minutes"), **res)
+                    print("   ok:", res)
+                    mudou_fila = True
+                    continue
                 if arquivo is None and rede != "instagram":
                     arquivo = baixar(post["video"], os.path.join(tempfile.gettempdir(), "video.mp4"))
                 if rede == "instagram":
