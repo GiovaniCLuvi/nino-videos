@@ -34,6 +34,7 @@ jobs:
           IG_APP_SECRET: ${{ secrets.IG_APP_SECRET }}
           TT_CLIENT_KEY: ${{ secrets.TT_CLIENT_KEY }}
           TT_CLIENT_SECRET: ${{ secrets.TT_CLIENT_SECRET }}
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SIMULAR: ${{ inputs.simular && '1' || '0' }}
       - name: Guardar mudanças
