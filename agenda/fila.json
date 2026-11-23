@@ -1,0 +1,147 @@
+{
+  "_leia": "Agenda do robô. Cada post tem 'quando' (horário de Brasília) e o estado em cada rede: pendente, postado, rascunho_no_tiktok, erro, perdido. Redes em config.redes_pausadas ficam de fora (YouTube, até a auditoria do Google).",
+  "config": {
+    "atraso_max_horas": 1,
+    "youtube_privacidade": "public",
+    "tiktok_modo": "rascunho",
+    "tiktok_privacidade": "SELF_ONLY",
+    "redes_pausadas": [
+      "youtube"
+    ]
+  },
+  "posts": [
+    {
+      "id": "regra-08-as-pedrinhas-da-mentira",
+      "quando": "2026-11-24T18:00:00-03:00",
+      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/claude/project-thread-8oiym3/videos/07-as-pedrinhas-da-mentira.mp4",
+      "titulo": "As pedrinhas da mentira",
+      "legenda": "Regra nº 8 da minha rua 🪨 #historias #animacao #mae #reflexao",
+      "comentario": "Qual mentira de amor sua mãe te contava? 🤍",
+      "redes": {
+        "instagram": {
+          "status": "pendente"
+        },
+        "youtube": {
+          "status": "pendente"
+        },
+        "tiktok": {
+          "status": "pendente"
+        }
+      }
+    },
+    {
+      "id": "regra-09-a-linha-da-pipa",
+      "quando": "2026-11-25T18:00:00-03:00",
+      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/claude/project-thread-8oiym3/videos/27-a-linha-da-pipa.mp4",
+      "titulo": "A linha da pipa",
+      "legenda": "Regra nº 9 da minha rua 🪁 #historias #animacao #amizade #reflexao",
+      "comentario": "Marca aquele amigo que mora longe e puxa a linha hoje 🤍",
+      "redes": {
+        "instagram": {
+          "status": "pendente"
+        },
+        "youtube": {
+          "status": "pendente"
+        },
+        "tiktok": {
+          "status": "pendente"
+        }
+      }
+    },
+    {
+      "id": "regra-10-a-lua-partida",
+      "quando": "2026-11-26T18:00:00-03:00",
+      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/claude/project-thread-8oiym3/videos/22-a-lua-partida.mp4",
+      "titulo": "A lua partida",
+      "legenda": "Regra nº 10 da minha rua 🌙 #historias #animacao #familia #reflexao",
+      "comentario": "Pra quem cresceu com duas casas: não foi culpa sua 🤍",
+      "redes": {
+        "instagram": {
+          "status": "pendente"
+        },
+        "youtube": {
+          "status": "pendente"
+        },
+        "tiktok": {
+          "status": "pendente"
+        }
+      }
+    },
+    {
+      "id": "regra-11-os-adesivos-da-risada",
+      "quando": "2026-11-27T18:00:00-03:00",
+      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/claude/project-thread-8oiym3/videos/20-os-adesivos-da-risada.mp4",
+      "titulo": "Os adesivos da risada",
+      "legenda": "Regra nº 11 da minha rua 🏷️ #historias #animacao #escola #reflexao",
+      "comentario": "Você já riu junto sem perceber que machucava? 🤍",
+      "redes": {
+        "instagram": {
+          "status": "pendente"
+        },
+        "youtube": {
+          "status": "pendente"
+        },
+        "tiktok": {
+          "status": "pendente"
+        }
+      }
+    },
+    {
+      "id": "regra-12-as-letras-do-nome",
+      "quando": "2026-11-28T18:00:00-03:00",
+      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/claude/project-thread-8oiym3/videos/12-as-letras-do-nome.mp4",
+      "titulo": "As letras do nome",
+      "legenda": "Regra nº 12 da minha rua 🔤 #historias #animacao #avo #reflexao",
+      "comentario": "Liga hoje pra alguém que tá perdendo letras 🤍",
+      "redes": {
+        "instagram": {
+          "status": "pendente"
+        },
+        "youtube": {
+          "status": "pendente"
+        },
+        "tiktok": {
+          "status": "pendente"
+        }
+      }
+    },
+    {
+      "id": "regra-13-a-fumaca-do-desejo",
+      "quando": "2026-11-29T18:00:00-03:00",
+      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/claude/project-thread-8oiym3/videos/31-a-fumaca-do-desejo.mp4",
+      "titulo": "A fumaça do desejo",
+      "legenda": "Regra nº 13 da minha rua 🎂 #historias #animacao #pai #reflexao",
+      "comentario": "Qual seria o desejo inteiro do seu pai? 🤍",
+      "redes": {
+        "instagram": {
+          "status": "pendente"
+        },
+        "youtube": {
+          "status": "pendente"
+        },
+        "tiktok": {
+          "status": "pendente"
+        }
+      }
+    },
+    {
+      "id": "regra-14-os-baloes-no-teto",
+      "quando": "2026-11-30T18:00:00-03:00",
+      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/claude/project-thread-8oiym3/videos/09-os-baloes-no-teto.mp4",
+      "titulo": "Os balões no teto",
+      "legenda": "Regra nº 14 da minha rua 🎈 #historias #animacao #pai #sonhos",
+      "comentario": "Qual balão tá preso no seu teto? 🎈🤍",
+      "redes": {
+        "instagram": {
+          "status": "pendente"
+        },
+        "youtube": {
+          "status": "pendente"
+        },
+        "tiktok": {
+          "status": "pendente"
+        }
+      }
+    }
+  ]
+}
