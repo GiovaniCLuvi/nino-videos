@@ -1,0 +1,46 @@
+name: Postar vídeos
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+    inputs:
+      simular:
+        description: "Só simular (não posta nada)"
+        type: boolean
+        default: false
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: robo
+  cancel-in-progress: false
+jobs:
+  postar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q requests cryptography
+      - name: Postar o que está na hora
+        run: python robo/postar.py
+        env:
+          COFRE_CHAVE: ${{ secrets.COFRE_CHAVE }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          IG_APP_ID: ${{ secrets.IG_APP_ID }}
+          IG_APP_SECRET: ${{ secrets.IG_APP_SECRET }}
+          TT_CLIENT_KEY: ${{ secrets.TT_CLIENT_KEY }}
+          TT_CLIENT_SECRET: ${{ secrets.TT_CLIENT_SECRET }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SIMULAR: ${{ inputs.simular && '1' || '0' }}
+      - name: Guardar mudanças
+        run: |
+          git config user.name "robo-nino"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A agenda dados robo
+          if git diff --cached --quiet; then echo "Nada mudou."; exit 0; fi
+          git commit -m "Robô: agenda atualizada"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done

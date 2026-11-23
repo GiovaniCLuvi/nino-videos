@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Conectar redes do Nino</title>
+<style>
+:root{--bg:#fafaf7;--fg:#1d1d1b;--muted:#6b6b66;--card:#fff;--line:#e4e2dc;--acc:#2f6fdb}
+@media (prefers-color-scheme:dark){:root{--bg:#161615;--fg:#eeeee9;--muted:#a3a39c;--card:#20201e;--line:#34342f;--acc:#7aa7ff}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,sans-serif}
+main{max-width:560px;margin:0 auto;padding:32px 16px}
+h1{font-size:24px;margin:0 0 4px}p{color:var(--muted);margin:0 0 20px}
+.b{display:block;width:100%;box-sizing:border-box;padding:16px;margin:0 0 12px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--fg);font-size:17px;text-align:left;cursor:pointer;text-decoration:none}
+.b small{display:block;color:var(--muted);font-size:13px}
+.code{font:15px/1.4 ui-monospace,monospace;word-break:break-all;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin:0 0 12px}
+.p{background:var(--acc);color:#fff;border:0;text-align:center}
+ol{padding-left:20px}li{margin:0 0 8px}
+</style></head><body><main id="m"></main>
+<script>
+const REDIRECT = location.origin + location.pathname;
+const ACTION = "https://github.com/giovanicluvi/nino-videos/actions/workflows/conectar.yml";
+const NOME = {instagram:"Instagram", youtube:"YouTube", tiktok:"TikTok"};
+const q = new URLSearchParams(location.search);
+const m = document.getElementById("m");
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function url(rede, id){
+  const r = encodeURIComponent(REDIRECT);
+  if (rede==="youtube") return `https://accounts.google.com/o/oauth2/v2/auth?client_id=${id}&redirect_uri=${r}&response_type=code&access_type=offline&prompt=consent&state=youtube&scope=${encodeURIComponent("https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube.readonly")}`;
+  if (rede==="instagram") return `https://www.instagram.com/oauth/authorize?enable_fb_login=0&force_authentication=1&client_id=${id}&redirect_uri=${r}&response_type=code&state=instagram&scope=instagram_business_basic,instagram_business_content_publish,instagram_business_manage_insights,instagram_business_manage_comments`;
+  return `https://www.tiktok.com/v2/auth/authorize/?client_key=${id}&response_type=code&redirect_uri=${r}&state=tiktok&scope=user.info.basic,user.info.stats,video.list,video.upload,video.publish`;
+}
+if (q.get("code")) {
+  const rede = q.get("state") || "?", code = q.get("code").split("#")[0];
+  m.innerHTML = `<h1>Quase lá: ${esc(NOME[rede]||rede)}</h1><p>Agora é só entregar este código pro robô. Ele vale poucos minutos.</p>
+  <div class="code" id="c">${esc(code)}</div>
+  <button class="b p" id="cp">Copiar código</button>
+  <a class="b" href="${ACTION}" target="_blank">Abrir o robô no GitHub<small>Toque em “Run workflow”, escolha <b>${esc(rede)}</b>, cole o código e toque no botão verde “Run workflow”.</small></a>
+  <p>Em 1 minuto aparece um ✓ verde. Se ficar vermelho, volte aqui e conecte de novo.</p>`;
+  document.getElementById("cp").onclick = async e => { try { await navigator.clipboard.writeText(code); e.target.textContent = "Copiado ✓"; } catch { e.target.textContent = "Segure o código acima pra copiar"; } };
+} else if (q.get("error") || q.get("error_description")) {
+  m.innerHTML = `<h1>Não deu certo</h1><p>${esc(q.get("error_description")||q.get("error"))}</p><a class="b" href="${REDIRECT}">Tentar de novo</a>`;
+} else {
+  m.innerHTML = `<h1>Conectar redes do Nino</h1><p>Toque numa rede, entre na conta do Nino e aceite. Depois esta página mostra um código.</p><div id="l">Carregando…</div>`;
+  fetch("apps.json", {cache:"no-store"}).then(r => r.json()).then(ids => {
+    document.getElementById("l").innerHTML = ["instagram","youtube","tiktok"].map(rede => ids[rede]
+      ? `<a class="b" href="${url(rede, ids[rede])}">${NOME[rede]}<small>Conectar a conta do Nino</small></a>`
+      : `<div class="b">${NOME[rede]}<small>Ainda falta criar o app desta rede</small></div>`).join("");
+  });
+}
+</script></body></html>
