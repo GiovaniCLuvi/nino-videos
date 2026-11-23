@@ -40,5 +40,13 @@ if __name__ == "__main__":
                 continue
             w.writerow([agora().date().isoformat(), nome, r.get("seguidores", 0),
                         sum(v.get("views", 0) or 0 for v in r.get("videos", [])), len(r.get("videos", []))])
+    # Política da API do YouTube: dados do YouTube guardados no máximo 30 dias.
+    import datetime as _dt
+    limite = (agora().date() - _dt.timedelta(days=30)).isoformat()
+    linhas = list(csv.reader(open(hist, newline="")))
+    manter = [l for l in linhas[1:] if not (l[1] == "youtube" and l[0] < limite)]
+    if len(manter) != len(linhas) - 1:
+        with open(hist, "w", newline="") as f:
+            csv.writer(f).writerows([linhas[0]] + manter)
     for nome, r in saida["redes"].items():
         print(nome, r.get("erro") or f"{r.get('seguidores')} seguidores, {len(r.get('videos', []))} vídeos")
