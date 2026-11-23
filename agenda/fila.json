@@ -19,7 +19,11 @@
       "comentario": "",
       "redes": {
         "tiktok": {
-          "status": "pendente"
+          "status": "rascunho_no_tiktok",
+          "em": "2026-11-23T16:39-03:00",
+          "id": "v_inbox_file~v2.7711453135910324230",
+          "estado": "SEND_TO_USER_INBOX",
+          "modo": "rascunho"
         }
       }
     },
