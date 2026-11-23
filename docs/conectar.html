@@ -17,12 +17,16 @@ ol{padding-left:20px}li{margin:0 0 8px}
 const REDIRECT = location.origin + location.pathname;
 const ACTION = "https://github.com/giovanicluvi/nino-videos/actions/workflows/conectar.yml";
 const NOME = {instagram:"Instagram", youtube:"YouTube", tiktok:"TikTok"};
+let IDS = {};
 const q = new URLSearchParams(location.search);
 const m = document.getElementById("m");
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 function url(rede, id){
   const r = encodeURIComponent(REDIRECT);
   if (rede==="youtube") return `https://accounts.google.com/o/oauth2/v2/auth?client_id=${id}&redirect_uri=${r}&response_type=code&access_type=offline&prompt=consent&state=youtube&scope=${encodeURIComponent("https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube.readonly")}`;
+  if (rede==="instagram" && IDS.instagram_modo==="facebook") return IDS.instagram_config_id
+    ? `https://www.facebook.com/v23.0/dialog/oauth?client_id=${id}&redirect_uri=${r}&response_type=code&state=instagram&config_id=${IDS.instagram_config_id}`
+    : `https://www.facebook.com/v23.0/dialog/oauth?client_id=${id}&redirect_uri=${r}&response_type=code&state=instagram&scope=instagram_basic,instagram_content_publish,instagram_manage_insights,instagram_manage_comments,pages_show_list,pages_read_engagement,business_management`;
   if (rede==="instagram") return `https://www.instagram.com/oauth/authorize?enable_fb_login=0&force_authentication=1&client_id=${id}&redirect_uri=${r}&response_type=code&state=instagram&scope=instagram_business_basic,instagram_business_content_publish,instagram_business_manage_insights,instagram_business_manage_comments`;
   return `https://www.tiktok.com/v2/auth/authorize/?client_key=${id}&response_type=code&redirect_uri=${r}&state=tiktok&scope=user.info.basic,user.info.stats,video.list,video.upload,video.publish`;
 }
@@ -38,7 +42,7 @@ if (q.get("code")) {
   m.innerHTML = `<h1>Não deu certo</h1><p>${esc(q.get("error_description")||q.get("error"))}</p><a class="b" href="${REDIRECT}">Tentar de novo</a>`;
 } else {
   m.innerHTML = `<h1>Conectar redes do Nino</h1><p>Toque numa rede, entre na conta do Nino e aceite. Depois esta página mostra um código.</p><div id="l">Carregando…</div>`;
-  fetch("apps.json", {cache:"no-store"}).then(r => r.json()).then(ids => {
+  fetch("apps.json", {cache:"no-store"}).then(r => r.json()).then(ids => { IDS = ids;
     document.getElementById("l").innerHTML = ["instagram","youtube","tiktok"].map(rede => ids[rede]
       ? `<a class="b" href="${url(rede, ids[rede])}">${NOME[rede]}<small>Conectar a conta do Nino</small></a>`
       : `<div class="b">${NOME[rede]}<small>Ainda falta criar o app desta rede</small></div>`).join("");
