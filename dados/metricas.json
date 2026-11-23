@@ -1,0 +1,89 @@
+{
+  "atualizado": "2026-11-23T16:01-03:00",
+  "redes": {
+    "youtube": {
+      "erro": "rede ainda não conectada"
+    },
+    "instagram": {
+      "conta": "nino.historia",
+      "seguidores": 139,
+      "videos": [
+        {
+          "id": "18017571290987854",
+          "titulo": "Regra nº 6 da minha rua 🐶 #historias #animacao #cachorro #re",
+          "data": "2026-11-22T21:03:10+0000",
+          "link": "https://www.instagram.com/reel/DgDuWo6kns5/",
+          "likes": 889,
+          "comentarios": 5,
+          "views": 8314,
+          "alcance": 7194,
+          "salvos": 43,
+          "compartilhamentos": 33
+        },
+        {
+          "id": "18120505990825581",
+          "titulo": "Regra nº 5 da minha rua 📏 #historias #animacao #professor #r",
+          "data": "2026-11-21T21:05:38+0000",
+          "link": "https://www.instagram.com/reel/DgBJvS6ClNz/",
+          "likes": 1321,
+          "comentarios": 5,
+          "views": 14515,
+          "alcance": 12358,
+          "salvos": 61,
+          "compartilhamentos": 44
+        },
+        {
+          "id": "18213150676369486",
+          "titulo": "Regra nº 4 da minha rua 🪞 #historias #animacao #familia #pri",
+          "data": "2026-11-20T21:05:28+0000",
+          "link": "https://www.instagram.com/reel/Df-lB9ODrh8/",
+          "likes": 1881,
+          "comentarios": 2,
+          "views": 21963,
+          "alcance": 19192,
+          "salvos": 61,
+          "compartilhamentos": 20
+        },
+        {
+          "id": "18187636441427336",
+          "titulo": "Regra nº 3 da minha rua 🐦 #historias #animacao #pai #reflexa",
+          "data": "2026-11-19T21:07:22+0000",
+          "link": "https://www.instagram.com/reel/Df8ANqZDI0M/",
+          "likes": 3829,
+          "comentarios": 5,
+          "views": 55806,
+          "alcance": 47173,
+          "salvos": 111,
+          "compartilhamentos": 73
+        },
+        {
+          "id": "18391295386233314",
+          "titulo": "O eco de domingo 🤍 #historias #animacao #reflexao #familia",
+          "data": "2026-11-17T21:07:15+0000",
+          "link": "https://www.instagram.com/reel/Df22tD_GV5Q/",
+          "likes": 181,
+          "comentarios": 1,
+          "views": 2339,
+          "alcance": 1887,
+          "salvos": 11,
+          "compartilhamentos": 5
+        },
+        {
+          "id": "18144487066617406",
+          "titulo": "O pensamento que eu ouço 🤍 #historias #animacao #reflexao #f",
+          "data": "2026-11-17T20:06:11+0000",
+          "link": "https://www.instagram.com/reel/Df2vwQaivYx/",
+          "likes": 215,
+          "comentarios": 3,
+          "views": 1995,
+          "alcance": 1591,
+          "salvos": 11,
+          "compartilhamentos": 2
+        }
+      ]
+    },
+    "tiktok": {
+      "erro": "rede ainda não conectada"
+    }
+  }
+}
