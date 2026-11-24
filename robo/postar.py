@@ -56,7 +56,8 @@ def main():
                 st.update(status="perdido", motivo=f"passou mais de {atraso_max} do horário sem conseguir postar")
                 mudou_fila = True
                 continue
-            via_zernio = rede == "tiktok" and cfg.get("tiktok_modo") == "zernio"
+            modo_tt = post.get("tiktok_modo", cfg.get("tiktok_modo"))      # post pode pedir "rascunho" (ex.: video com produto do TikTok Shop)
+            via_zernio = rede == "tiktok" and modo_tt == "zernio"
             if rede not in cofre and not via_zernio:
                 if st.get("motivo") != "rede ainda não conectada":
                     st["motivo"] = "rede ainda não conectada"
@@ -66,7 +67,7 @@ def main():
             if simular:
                 print("   (simulação: não postei)")
                 continue
-            cfg_rede = cfg
+            cfg_rede = {**cfg, "tiktok_modo": modo_tt} if rede == "tiktok" else cfg
             try:
                 if via_zernio:
                     try:
