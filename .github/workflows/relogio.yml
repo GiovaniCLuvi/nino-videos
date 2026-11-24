@@ -1,0 +1,48 @@
+name: Relógio do robô
+# O agendamento (cron) do GitHub atrasa horas ou nem roda em repositórios pequenos.
+# Este relógio fica ligado ~5h50, dispara "Postar vídeos" a cada 15 min e "Métricas do dia"
+# às 07:17 de Brasília, e no fim liga a si mesmo de novo. O cron abaixo só serve para
+# religar o relógio se ele parar por algum motivo.
+on:
+  schedule:
+    - cron: "41 */3 * * *"
+  workflow_dispatch:
+permissions:
+  actions: write
+  contents: read
+concurrency:
+  group: relogio
+  cancel-in-progress: false
+jobs:
+  relogio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 358
+    steps:
+      - name: Bater o relógio
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          fim=$(( $(date +%s) + 350*60 ))
+          ultimo_post=""; ultima_metrica=""
+          while [ "$(date +%s)" -lt "$fim" ]; do
+            m=$(date -u +%M); h=$(date -u +%H); dia=$(date -u +%F)
+            bloco="$dia-$h-$(( 10#$m / 15 ))"
+            if [ "$bloco" != "$ultimo_post" ] && [ $(( 10#$m % 15 )) -ge 3 ]; then
+              gh workflow run postar.yml --ref main && echo "$(date -u +%T) postar disparado"
+              ultimo_post="$bloco"
+            fi
+            if [ "$h" = "10" ] && [ $(( 10#$m )) -ge 17 ]; then
+              if [ "$ultima_metrica" != "$dia" ]; then
+                gh workflow run metricas.yml --ref main && echo "$(date -u +%T) métricas disparadas"
+                ultima_metrica="$dia"
+              fi
+            fi
+            sleep 60
+          done
+      - name: Religar o relógio
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: gh workflow run relogio.yml --ref main
