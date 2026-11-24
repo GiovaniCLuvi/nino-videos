@@ -75,11 +75,11 @@ def postar(cofre, post, arquivo, cfg):
 def metricas(cofre):
     renovar(cofre)
     u = checar(requests.get(f"{API}/user/info/", headers=_h(cofre), params={
-        "fields": "display_name,follower_count,likes_count,video_count"}, timeout=60)).json()["data"]["user"]
+        "fields": "display_name,follower_count,following_count,likes_count,video_count"}, timeout=60)).json()["data"]["user"]
     vids = checar(requests.post(f"{API}/video/list/", headers=_h(cofre), params={
-        "fields": "id,title,create_time,share_url,view_count,like_count,comment_count,share_count"},
+        "fields": "id,title,create_time,share_url,duration,view_count,like_count,comment_count,share_count"},
         json={"max_count": 20}, timeout=60)).json().get("data", {}).get("videos", [])
     return {"conta": u.get("display_name"), "seguidores": u.get("follower_count", 0), "curtidas_total": u.get("likes_count", 0),
             "videos": [{"id": v["id"], "titulo": (v.get("title") or "")[:60], "data": v.get("create_time"), "link": v.get("share_url"),
                         "views": v.get("view_count", 0), "likes": v.get("like_count", 0),
-                        "comentarios": v.get("comment_count", 0), "compartilhamentos": v.get("share_count", 0)} for v in vids]}
+                        "comentarios": v.get("comment_count", 0), "compartilhamentos": v.get("share_count", 0), "duracao_s": v.get("duration")} for v in vids]}

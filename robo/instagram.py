@@ -99,6 +99,43 @@ def postar(cofre, post, arquivo, cfg):
     return saida
 
 
+NOMES_IG = {"saved": "salvos", "shares": "compartilhamentos", "reach": "alcance", "follows": "seguidores_ganhos",
+            "profile_visits": "visitas_perfil", "total_interactions": "interacoes",
+            "ig_reels_avg_watch_time": "tempo_medio_ms", "ig_reels_video_view_total_time": "tempo_total_ms",
+            "reels_skip_rate": "pularam_pct"}
+METRICAS_REEL = ["views", "reach", "saved", "shares", "total_interactions", "ig_reels_avg_watch_time",
+                 "ig_reels_video_view_total_time", "follows", "profile_visits", "reels_skip_rate"]
+
+
+def _insights_midia(G, mid, tk, tipo):
+    """Pede tudo de uma vez; se a Meta recusar alguma métrica, pede uma por uma e pula as que não existem."""
+    lista = METRICAS_REEL if tipo == "REELS" else ["views", "reach", "saved", "shares", "total_interactions"]
+    out = {}
+    r = requests.get(f"{G}/{mid}/insights", params={"metric": ",".join(lista), "access_token": tk}, timeout=60)
+    dados = r.json().get("data", []) if r.ok else []
+    if not r.ok:
+        for m in lista:
+            r1 = requests.get(f"{G}/{mid}/insights", params={"metric": m, "access_token": tk}, timeout=60)
+            if r1.ok:
+                dados += r1.json().get("data", [])
+    for d in dados:
+        vals = d.get("values") or [{}]
+        out[NOMES_IG.get(d["name"], d["name"])] = vals[0].get("value", d.get("total_value", {}).get("value"))
+    return out
+
+
+def _seguidores_por_dia(G, uid, tk):
+    """Seguidores novos por dia nos últimos 30 dias (a Meta só dá isso para contas com 100+ seguidores)."""
+    import time
+    fim = int(time.time()); ini = fim - 29 * 86400
+    r = requests.get(f"{G}/{uid}/insights", params={"metric": "follower_count", "period": "day",
+                                                    "since": ini, "until": fim, "access_token": tk}, timeout=60)
+    if not r.ok:
+        return []
+    vals = (r.json().get("data") or [{}])[0].get("values", [])
+    return [{"data": v["end_time"][:10], "novos": v.get("value", 0)} for v in vals]
+
+
 def metricas(cofre):
     ig = cofre["instagram"]
     tk, G, uid = ig["token"], _g(ig), ig["user_id"]
@@ -110,11 +147,10 @@ def metricas(cofre):
     for m in lista:
         v = {"id": m["id"], "titulo": (m.get("caption") or "")[:60], "data": m.get("timestamp"),
              "link": m.get("permalink"), "likes": m.get("like_count", 0), "comentarios": m.get("comments_count", 0)}
-        for metr in ("views,reach,saved,shares", "reach,saved,shares"):
-            r = requests.get(f"{G}/{m['id']}/insights", params={"metric": metr, "access_token": tk}, timeout=60)
-            if r.ok:
-                for d in r.json().get("data", []):
-                    v[{"saved": "salvos", "shares": "compartilhamentos", "reach": "alcance"}.get(d["name"], d["name"])] = d["values"][0]["value"]
-                break
+        v.update(_insights_midia(G, m["id"], tk, m.get("media_product_type")))
+        for k in ("tempo_medio_ms", "tempo_total_ms"):
+            if isinstance(v.get(k), (int, float)):
+                v[k.replace("_ms", "_s")] = round(v.pop(k) / 1000, 1)
         videos.append(v)
-    return {"conta": eu.get("username"), "seguidores": eu.get("followers_count", 0), "videos": videos}
+    return {"conta": eu.get("username"), "seguidores": eu.get("followers_count", 0), "videos": videos,
+            "seguidores_por_dia": _seguidores_por_dia(G, uid, tk)}
