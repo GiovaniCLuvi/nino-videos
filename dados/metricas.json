@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-24T14:45-03:00",
+  "atualizado": "2026-11-24T17:39-03:00",
   "redes": {
     "youtube": {
       "conta": "Nino",
@@ -12,7 +12,7 @@
           "data": "2026-11-22T21:02:37Z",
           "privacidade": "public",
           "link": "https://youtube.com/shorts/Z3sjswq411Y",
-          "views": 147,
+          "views": 149,
           "likes": 6,
           "comentarios": 2
         },
@@ -22,8 +22,8 @@
           "data": "2026-11-21T21:04:18Z",
           "privacidade": "public",
           "link": "https://youtube.com/shorts/nVu5kOB3FeE",
-          "views": 27998,
-          "likes": 1014,
+          "views": 28001,
+          "likes": 1015,
           "comentarios": 3
         },
         {
@@ -32,8 +32,8 @@
           "data": "2026-11-20T21:05:13Z",
           "privacidade": "public",
           "link": "https://youtube.com/shorts/6FWJxDmXIQE",
-          "views": 35739,
-          "likes": 764,
+          "views": 35902,
+          "likes": 767,
           "comentarios": 3
         },
         {
@@ -52,7 +52,7 @@
           "data": "2026-11-17T21:06:28Z",
           "privacidade": "public",
           "link": "https://youtube.com/shorts/-O08MHFRZSo",
-          "views": 1642,
+          "views": 1643,
           "likes": 52,
           "comentarios": 2
         },
@@ -81,71 +81,71 @@
     },
     "instagram": {
       "conta": "nino.historia",
-      "seguidores": 140,
+      "seguidores": 141,
       "videos": [
         {
           "id": "18104505830542557",
           "titulo": "Como o pisca-pisca sabe a hora de piscar? 🎄✨ A resposta tem ",
           "data": "2026-11-24T15:12:40+0000",
           "link": "https://www.instagram.com/reel/DgIP4aciEKk/",
-          "likes": 87,
+          "likes": 92,
           "comentarios": 2,
-          "views": 1933,
-          "alcance": 1580,
+          "views": 2058,
+          "alcance": 1711,
           "salvos": 4,
-          "compartilhamentos": 0,
-          "interacoes": 94,
-          "pularam_pct": 19.7,
-          "tempo_medio_s": 30.3,
-          "tempo_total_s": 48770.8
+          "compartilhamentos": 3,
+          "interacoes": 103,
+          "pularam_pct": 20.3,
+          "tempo_medio_s": 31.0,
+          "tempo_total_s": 54732.7
         },
         {
           "id": "18017571290987854",
           "titulo": "Regra nº 6 da minha rua 🐶 #historias #animacao #cachorro #re",
           "data": "2026-11-22T21:03:10+0000",
           "link": "https://www.instagram.com/reel/DgDuWo6kns5/",
-          "likes": 934,
+          "likes": 936,
           "comentarios": 5,
-          "views": 8593,
+          "views": 8598,
           "alcance": 7442,
           "salvos": 48,
           "compartilhamentos": 57,
-          "interacoes": 1061,
+          "interacoes": 1063,
           "pularam_pct": 23.8,
           "tempo_medio_s": 59.3,
-          "tempo_total_s": 445409.9
+          "tempo_total_s": 445653.7
         },
         {
           "id": "18120505990825581",
           "titulo": "Regra nº 5 da minha rua 📏 #historias #animacao #professor #r",
           "data": "2026-11-21T21:05:38+0000",
           "link": "https://www.instagram.com/reel/DgBJvS6ClNz/",
-          "likes": 1330,
+          "likes": 1331,
           "comentarios": 5,
-          "views": 14611,
-          "alcance": 12432,
+          "views": 14627,
+          "alcance": 12448,
           "salvos": 62,
           "compartilhamentos": 44,
-          "interacoes": 1472,
+          "interacoes": 1473,
           "pularam_pct": 20.1,
           "tempo_medio_s": 73.0,
-          "tempo_total_s": 920176.6
+          "tempo_total_s": 921661.5
         },
         {
           "id": "18213150676369486",
           "titulo": "Regra nº 4 da minha rua 🪞 #historias #animacao #familia #pri",
           "data": "2026-11-20T21:05:28+0000",
           "link": "https://www.instagram.com/reel/Df-lB9ODrh8/",
-          "likes": 1891,
+          "likes": 1893,
           "comentarios": 2,
-          "views": 22099,
-          "alcance": 19321,
-          "salvos": 62,
+          "views": 22137,
+          "alcance": 19354,
+          "salvos": 63,
           "compartilhamentos": 20,
-          "interacoes": 2001,
+          "interacoes": 2004,
           "pularam_pct": 16.1,
-          "tempo_medio_s": 82.9,
-          "tempo_total_s": 1583044.9
+          "tempo_medio_s": 82.8,
+          "tempo_total_s": 1585256.0
         },
         {
           "id": "18187636441427336",
@@ -154,14 +154,14 @@
           "link": "https://www.instagram.com/reel/Df8ANqZDI0M/",
           "likes": 3835,
           "comentarios": 5,
-          "views": 55908,
-          "alcance": 47173,
+          "views": 55917,
+          "alcance": 47265,
           "salvos": 111,
           "compartilhamentos": 74,
           "interacoes": 4095,
           "pularam_pct": 19.3,
           "tempo_medio_s": 75.2,
-          "tempo_total_s": 3597437.2
+          "tempo_total_s": 3597459.9
         },
         {
           "id": "18391295386233314",
@@ -317,16 +317,16 @@
     },
     "tiktok": {
       "conta": "Nino",
-      "seguidores": 412,
-      "curtidas_total": 21607,
+      "seguidores": 411,
+      "curtidas_total": 21628,
       "videos": [
         {
           "id": "7711762958866599175",
           "titulo": "Você sabe como o pisca-pisca decide a hora de piscar? 🎄✨ Tem",
           "data": 1795534748,
           "link": "https://www.tiktok.com/@nino.historia/video/7711762958866599175?utm_campaign=tt4d_open_api&utm_source=sbawoxjnm20dli8mu2",
-          "views": 72,
-          "likes": 13,
+          "views": 168,
+          "likes": 21,
           "comentarios": 0,
           "compartilhamentos": 0,
           "duracao_s": 63
@@ -336,8 +336,8 @@
           "titulo": "Regra nº 7 da minha rua 🪞 #historias #animacao #mae #reflexa",
           "data": 1795467719,
           "link": "https://www.tiktok.com/@nino.historia/video/7711475131129924870?utm_campaign=tt4d_open_api&utm_source=sbawoxjnm20dli8mu2",
-          "views": 3956,
-          "likes": 466,
+          "views": 3976,
+          "likes": 469,
           "comentarios": 0,
           "compartilhamentos": 5,
           "duracao_s": 163
@@ -358,7 +358,7 @@
           "titulo": "Regra nº 5 da minha rua 📏 #historias #animacao #professor #r",
           "data": 1795294985,
           "link": "https://www.tiktok.com/@nino.historia/video/7710733242676251911?utm_campaign=tt4d_open_api&utm_source=sbawoxjnm20dli8mu2",
-          "views": 3719,
+          "views": 3720,
           "likes": 326,
           "comentarios": 1,
           "compartilhamentos": 5,
@@ -369,8 +369,8 @@
           "titulo": "Regra nº 4 da minha rua 🪞 #historias #animacao #familia #pri",
           "data": 1795208624,
           "link": "https://www.tiktok.com/@nino.historia/video/7710362348774837525?utm_campaign=tt4d_open_api&utm_source=sbawoxjnm20dli8mu2",
-          "views": 154284,
-          "likes": 8749,
+          "views": 154428,
+          "likes": 8759,
           "comentarios": 13,
           "compartilhamentos": 127,
           "duracao_s": 163
@@ -380,7 +380,7 @@
           "titulo": "Regra nº 3 da minha rua 🐦 #historias #animacao #pai #reflexa",
           "data": 1795122252,
           "link": "https://www.tiktok.com/@nino.historia/video/7709991389555084564?utm_campaign=tt4d_open_api&utm_source=sbawoxjnm20dli8mu2",
-          "views": 13859,
+          "views": 13865,
           "likes": 813,
           "comentarios": 3,
           "compartilhamentos": 13,
