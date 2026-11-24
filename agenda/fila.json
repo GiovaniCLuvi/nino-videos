@@ -38,7 +38,11 @@
       "nota": "Video de produto (TikTok Shop): vai para o rascunho para a pessoa marcar o produto (pisca-pisca 100 LED 9m, Neverdie Store.br) antes de publicar.",
       "redes": {
         "tiktok": {
-          "status": "pendente"
+          "status": "rascunho_no_tiktok",
+          "em": "2026-11-24T08:17-03:00",
+          "id": "v_inbox_file~v2.7711695104725239829",
+          "estado": "SEND_TO_USER_INBOX",
+          "modo": "rascunho"
         }
       }
     },
