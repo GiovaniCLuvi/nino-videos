@@ -76,13 +76,24 @@
       "comentario": "Qual mentira de amor sua mãe te contava? 🤍",
       "redes": {
         "instagram": {
-          "status": "pendente"
+          "status": "postado",
+          "em": "2026-11-24T18:04-03:00",
+          "id": "18119565113582784",
+          "link": "https://www.instagram.com/reel/DgI4HCWibAA/",
+          "comentario": "feito (fixar no app)"
         },
         "youtube": {
-          "status": "pendente"
+          "status": "pausada",
+          "motivo": "rede pausada em config.redes_pausadas"
         },
         "tiktok": {
-          "status": "pendente"
+          "status": "postado",
+          "em": "2026-11-24T18:04-03:00",
+          "id": "6b05fbdecf104af92acdfdd1",
+          "estado": "published",
+          "modo": "zernio",
+          "conta": "nino.historia",
+          "link": null
         }
       }
     },
