@@ -55,10 +55,15 @@
       "comentario": "E o seu, fica piscando ou parado? 🎄",
       "redes": {
         "instagram": {
-          "status": "pendente"
+          "status": "postado",
+          "em": "2026-11-24T12:12-03:00",
+          "id": "18104505830542557",
+          "link": "https://www.instagram.com/reel/DgIP4aciEKk/",
+          "comentario": "feito (fixar no app)"
         },
         "youtube": {
-          "status": "pendente"
+          "status": "pausada",
+          "motivo": "rede pausada em config.redes_pausadas"
         }
       }
     },
