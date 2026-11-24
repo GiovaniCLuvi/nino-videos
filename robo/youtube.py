@@ -3,7 +3,7 @@ import os
 import requests
 from comum import segredo, app_id, checar
 
-ESCOPOS = "https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube.readonly"
+ESCOPOS = "https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/yt-analytics.readonly"
 
 
 def trocar_codigo(codigo, redirect):
@@ -67,5 +67,31 @@ def metricas(cofre):
                            "views": int(s.get("viewCount", 0)), "likes": int(s.get("likeCount", 0)),
                            "comentarios": int(s.get("commentCount", 0))})
     st = canal["statistics"]
-    return {"conta": canal["snippet"]["title"], "seguidores": int(st.get("subscriberCount", 0)),
-            "views_total": int(st.get("viewCount", 0)), "videos": videos}
+    saida = {"conta": canal["snippet"]["title"], "seguidores": int(st.get("subscriberCount", 0)),
+             "views_total": int(st.get("viewCount", 0)), "videos": videos}
+    try:
+        _analytics(h, videos, saida)
+    except Exception as e:  # sem a permissão de Analytics ainda: segue só com o básico
+        saida["aviso_analytics"] = str(e)[:200]
+    return saida
+
+
+def _analytics(h, videos, saida):
+    """YouTube Analytics: tempo assistido, % assistido e inscritos ganhos por vídeo, mais inscritos por dia."""
+    import datetime
+    hoje = datetime.date.today()
+    base = {"ids": "channel==MINE", "startDate": "2026-11-01", "endDate": hoje.isoformat()}
+    U = "https://youtubeanalytics.googleapis.com/v2/reports"
+    r = checar(requests.get(U, headers=h, timeout=60, params={**base, "dimensions": "video", "sort": "-views", "maxResults": 200,
+        "metrics": "views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,subscribersGained,shares"})).json()
+    cols = [c["name"] for c in r.get("columnHeaders", [])]
+    por_id = {l[0]: dict(zip(cols, l)) for l in r.get("rows", [])}
+    for v in videos:
+        a = por_id.get(v["id"])
+        if a:
+            v.update({"tempo_medio_s": a.get("averageViewDuration"), "assistido_pct": round(a.get("averageViewPercentage") or 0, 1),
+                      "seguidores_ganhos": a.get("subscribersGained"), "compartilhamentos": a.get("shares"),
+                      "tempo_total_s": round((a.get("estimatedMinutesWatched") or 0) * 60)})
+    d = checar(requests.get(U, headers=h, timeout=60, params={**base, "startDate": (hoje - datetime.timedelta(days=29)).isoformat(),
+        "dimensions": "day", "metrics": "subscribersGained,subscribersLost"})).json()
+    saida["seguidores_por_dia"] = [{"data": l[0], "novos": (l[1] or 0) - (l[2] or 0)} for l in d.get("rows", [])]

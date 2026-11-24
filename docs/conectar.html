@@ -23,7 +23,7 @@ const m = document.getElementById("m");
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 function url(rede, id){
   const r = encodeURIComponent(REDIRECT);
-  if (rede==="youtube") return `https://accounts.google.com/o/oauth2/v2/auth?client_id=${id}&redirect_uri=${r}&response_type=code&access_type=offline&prompt=consent&state=youtube&scope=${encodeURIComponent("https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube.readonly")}`;
+  if (rede==="youtube") return `https://accounts.google.com/o/oauth2/v2/auth?client_id=${id}&redirect_uri=${r}&response_type=code&access_type=offline&prompt=consent&state=youtube&scope=${encodeURIComponent("https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/yt-analytics.readonly")}`;
   if (rede==="instagram" && IDS.instagram_modo==="facebook") return IDS.instagram_config_id
     ? `https://www.facebook.com/v23.0/dialog/oauth?client_id=${id}&redirect_uri=${r}&response_type=code&state=instagram&config_id=${IDS.instagram_config_id}`
     : `https://www.facebook.com/v23.0/dialog/oauth?client_id=${id}&redirect_uri=${r}&response_type=code&state=instagram&scope=instagram_basic,instagram_content_publish,instagram_manage_insights,instagram_manage_comments,pages_show_list,pages_read_engagement,business_management`;
