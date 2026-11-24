@@ -1,7 +1,7 @@
 {
   "_leia": "Agenda do robô. Cada post tem 'quando' (horário de Brasília) e o estado em cada rede: pendente, postado, rascunho_no_tiktok, erro, perdido. Redes em config.redes_pausadas ficam de fora (YouTube, até a auditoria do Google).",
   "config": {
-    "atraso_max_horas": 1,
+    "atraso_max_horas": 3,
     "youtube_privacidade": "public",
     "tiktok_modo": "zernio",
     "tiktok_privacidade": "SELF_ONLY",
