@@ -1,60 +1,151 @@
 {
-  "atualizado": "2026-11-23T16:01-03:00",
+  "atualizado": "2026-11-24T08:20-03:00",
   "redes": {
     "youtube": {
-      "erro": "rede ainda não conectada"
+      "conta": "Nino",
+      "seguidores": 212,
+      "views_total": 96891,
+      "videos": [
+        {
+          "id": "Z3sjswq411Y",
+          "titulo": "Os minutos do Biscoito",
+          "data": "2026-11-22T21:02:37Z",
+          "privacidade": "public",
+          "link": "https://youtube.com/shorts/Z3sjswq411Y",
+          "views": 147,
+          "likes": 6,
+          "comentarios": 2
+        },
+        {
+          "id": "nVu5kOB3FeE",
+          "titulo": "O tamanho da professora",
+          "data": "2026-11-21T21:04:18Z",
+          "privacidade": "public",
+          "link": "https://youtube.com/shorts/nVu5kOB3FeE",
+          "views": 27996,
+          "likes": 1014,
+          "comentarios": 3
+        },
+        {
+          "id": "6FWJxDmXIQE",
+          "titulo": "A cara do primo",
+          "data": "2026-11-20T21:05:13Z",
+          "privacidade": "public",
+          "link": "https://youtube.com/shorts/6FWJxDmXIQE",
+          "views": 35724,
+          "likes": 763,
+          "comentarios": 3
+        },
+        {
+          "id": "q2qjrq00ETo",
+          "titulo": "Quem chora vira passarinho",
+          "data": "2026-11-19T21:05:25Z",
+          "privacidade": "public",
+          "link": "https://youtube.com/shorts/q2qjrq00ETo",
+          "views": 28747,
+          "likes": 548,
+          "comentarios": 4
+        },
+        {
+          "id": "-O08MHFRZSo",
+          "titulo": "O eco de domingo",
+          "data": "2026-11-17T21:06:28Z",
+          "privacidade": "public",
+          "link": "https://youtube.com/shorts/-O08MHFRZSo",
+          "views": 1642,
+          "likes": 52,
+          "comentarios": 2
+        },
+        {
+          "id": "lWBLIPYO8Y0",
+          "titulo": "O pensamento que eu ouço",
+          "data": "2026-11-17T20:04:59Z",
+          "privacidade": "public",
+          "link": "https://youtube.com/shorts/lWBLIPYO8Y0",
+          "views": 2708,
+          "likes": 69,
+          "comentarios": 2
+        },
+        {
+          "id": "_fmI242oO7U",
+          "titulo": "Teste privado",
+          "data": "2026-11-17T15:33:28Z",
+          "privacidade": "private",
+          "link": "https://youtube.com/shorts/_fmI242oO7U",
+          "views": 0,
+          "likes": 0,
+          "comentarios": 0
+        }
+      ],
+      "aviso_analytics": "GET https://youtubeanalytics.googleapis.com/v2/reports -> 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"YouTube Analytics API has not been used in project 781156731380 before or it is disabled."
     },
     "instagram": {
       "conta": "nino.historia",
-      "seguidores": 139,
+      "seguidores": 140,
       "videos": [
         {
           "id": "18017571290987854",
           "titulo": "Regra nº 6 da minha rua 🐶 #historias #animacao #cachorro #re",
           "data": "2026-11-22T21:03:10+0000",
           "link": "https://www.instagram.com/reel/DgDuWo6kns5/",
-          "likes": 889,
+          "likes": 932,
           "comentarios": 5,
-          "views": 8314,
-          "alcance": 7194,
-          "salvos": 43,
-          "compartilhamentos": 33
+          "views": 8583,
+          "alcance": 7442,
+          "salvos": 47,
+          "compartilhamentos": 57,
+          "interacoes": 1058,
+          "pularam_pct": 23.8,
+          "tempo_medio_s": 59.3,
+          "tempo_total_s": 444904.6
         },
         {
           "id": "18120505990825581",
           "titulo": "Regra nº 5 da minha rua 📏 #historias #animacao #professor #r",
           "data": "2026-11-21T21:05:38+0000",
           "link": "https://www.instagram.com/reel/DgBJvS6ClNz/",
-          "likes": 1321,
+          "likes": 1327,
           "comentarios": 5,
-          "views": 14515,
-          "alcance": 12358,
+          "views": 14569,
+          "alcance": 12385,
           "salvos": 61,
-          "compartilhamentos": 44
+          "compartilhamentos": 44,
+          "interacoes": 1467,
+          "pularam_pct": 20.1,
+          "tempo_medio_s": 73.0,
+          "tempo_total_s": 918248.9
         },
         {
           "id": "18213150676369486",
           "titulo": "Regra nº 4 da minha rua 🪞 #historias #animacao #familia #pri",
           "data": "2026-11-20T21:05:28+0000",
           "link": "https://www.instagram.com/reel/Df-lB9ODrh8/",
-          "likes": 1881,
+          "likes": 1888,
           "comentarios": 2,
-          "views": 21963,
-          "alcance": 19192,
+          "views": 22055,
+          "alcance": 19280,
           "salvos": 61,
-          "compartilhamentos": 20
+          "compartilhamentos": 20,
+          "interacoes": 1997,
+          "pularam_pct": 16.1,
+          "tempo_medio_s": 82.9,
+          "tempo_total_s": 1580540.9
         },
         {
           "id": "18187636441427336",
           "titulo": "Regra nº 3 da minha rua 🐦 #historias #animacao #pai #reflexa",
           "data": "2026-11-19T21:07:22+0000",
           "link": "https://www.instagram.com/reel/Df8ANqZDI0M/",
-          "likes": 3829,
+          "likes": 3833,
           "comentarios": 5,
-          "views": 55806,
+          "views": 55882,
           "alcance": 47173,
           "salvos": 111,
-          "compartilhamentos": 73
+          "compartilhamentos": 74,
+          "interacoes": 4093,
+          "pularam_pct": 19.3,
+          "tempo_medio_s": 75.2,
+          "tempo_total_s": 3595855.5
         },
         {
           "id": "18391295386233314",
@@ -66,7 +157,11 @@
           "views": 2339,
           "alcance": 1887,
           "salvos": 11,
-          "compartilhamentos": 5
+          "compartilhamentos": 5,
+          "interacoes": 201,
+          "pularam_pct": 18,
+          "tempo_medio_s": 69.2,
+          "tempo_total_s": 128520.9
         },
         {
           "id": "18144487066617406",
@@ -78,12 +173,215 @@
           "views": 1995,
           "alcance": 1591,
           "salvos": 11,
-          "compartilhamentos": 2
+          "compartilhamentos": 2,
+          "interacoes": 236,
+          "pularam_pct": 21.9,
+          "tempo_medio_s": 80.1,
+          "tempo_total_s": 124148.0
+        }
+      ],
+      "seguidores_por_dia": [
+        {
+          "data": "2026-10-27",
+          "novos": 0
+        },
+        {
+          "data": "2026-10-28",
+          "novos": 0
+        },
+        {
+          "data": "2026-10-29",
+          "novos": 0
+        },
+        {
+          "data": "2026-10-30",
+          "novos": 0
+        },
+        {
+          "data": "2026-10-31",
+          "novos": 0
+        },
+        {
+          "data": "2026-11-01",
+          "novos": 0
+        },
+        {
+          "data": "2026-11-02",
+          "novos": 0
+        },
+        {
+          "data": "2026-11-03",
+          "novos": 0
+        },
+        {
+          "data": "2026-11-04",
+          "novos": 0
+        },
+        {
+          "data": "2026-11-05",
+          "novos": 0
+        },
+        {
+          "data": "2026-11-06",
+          "novos": 0
+        },
+        {
+          "data": "2026-11-07",
+          "novos": 0
+        },
+        {
+          "data": "2026-11-08",
+          "novos": 0
+        },
+        {
+          "data": "2026-11-09",
+          "novos": 0
+        },
+        {
+          "data": "2026-11-10",
+          "novos": 0
+        },
+        {
+          "data": "2026-11-11",
+          "novos": 0
+        },
+        {
+          "data": "2026-11-12",
+          "novos": 0
+        },
+        {
+          "data": "2026-11-13",
+          "novos": 0
+        },
+        {
+          "data": "2026-11-14",
+          "novos": 0
+        },
+        {
+          "data": "2026-11-15",
+          "novos": 0
+        },
+        {
+          "data": "2026-11-16",
+          "novos": 0
+        },
+        {
+          "data": "2026-11-17",
+          "novos": 6
+        },
+        {
+          "data": "2026-11-18",
+          "novos": 1
+        },
+        {
+          "data": "2026-11-19",
+          "novos": 27
+        },
+        {
+          "data": "2026-11-20",
+          "novos": 53
+        },
+        {
+          "data": "2026-11-21",
+          "novos": 17
+        },
+        {
+          "data": "2026-11-22",
+          "novos": 33
+        },
+        {
+          "data": "2026-11-23",
+          "novos": 0
+        },
+        {
+          "data": "2026-11-24",
+          "novos": 0
         }
       ]
     },
     "tiktok": {
-      "erro": "rede ainda não conectada"
+      "conta": "Nino",
+      "seguidores": 411,
+      "curtidas_total": 21561,
+      "videos": [
+        {
+          "id": "7711475131129924870",
+          "titulo": "Regra nº 7 da minha rua 🪞 #historias #animacao #mae #reflexa",
+          "data": 1795467719,
+          "link": "https://www.tiktok.com/@nino.historia/video/7711475131129924870?utm_campaign=tt4d_open_api&utm_source=sbawoxjnm20dli8mu2",
+          "views": 3888,
+          "likes": 459,
+          "comentarios": 0,
+          "compartilhamentos": 5,
+          "duracao_s": 163
+        },
+        {
+          "id": "7711103516437122305",
+          "titulo": "Regra nº 6 da minha rua 🐶 #historias #animacao #cachorro #re",
+          "data": 1795381298,
+          "link": "https://www.tiktok.com/@nino.historia/video/7711103516437122305?utm_campaign=tt4d_open_api&utm_source=sbawoxjnm20dli8mu2",
+          "views": 3027,
+          "likes": 288,
+          "comentarios": 1,
+          "compartilhamentos": 4,
+          "duracao_s": 163
+        },
+        {
+          "id": "7710733242676251911",
+          "titulo": "Regra nº 5 da minha rua 📏 #historias #animacao #professor #r",
+          "data": 1795294985,
+          "link": "https://www.tiktok.com/@nino.historia/video/7710733242676251911?utm_campaign=tt4d_open_api&utm_source=sbawoxjnm20dli8mu2",
+          "views": 3716,
+          "likes": 326,
+          "comentarios": 1,
+          "compartilhamentos": 5,
+          "duracao_s": 155
+        },
+        {
+          "id": "7710362348774837525",
+          "titulo": "Regra nº 4 da minha rua 🪞 #historias #animacao #familia #pri",
+          "data": 1795208624,
+          "link": "https://www.tiktok.com/@nino.historia/video/7710362348774837525?utm_campaign=tt4d_open_api&utm_source=sbawoxjnm20dli8mu2",
+          "views": 154005,
+          "likes": 8726,
+          "comentarios": 13,
+          "compartilhamentos": 127,
+          "duracao_s": 163
+        },
+        {
+          "id": "7709991389555084564",
+          "titulo": "Regra nº 3 da minha rua 🐦 #historias #animacao #pai #reflexa",
+          "data": 1795122252,
+          "link": "https://www.tiktok.com/@nino.historia/video/7709991389555084564?utm_campaign=tt4d_open_api&utm_source=sbawoxjnm20dli8mu2",
+          "views": 13832,
+          "likes": 811,
+          "comentarios": 3,
+          "compartilhamentos": 13,
+          "duracao_s": 162
+        },
+        {
+          "id": "7709249437931343124",
+          "titulo": "O eco de domingo 🤍 #historias #animacao #reflexao #familia",
+          "data": 1794949508,
+          "link": "https://www.tiktok.com/@nino.historia/video/7709249437931343124?utm_campaign=tt4d_open_api&utm_source=sbawoxjnm20dli8mu2",
+          "views": 4242,
+          "likes": 386,
+          "comentarios": 2,
+          "compartilhamentos": 4,
+          "duracao_s": 163
+        },
+        {
+          "id": "7708827527409700104",
+          "titulo": "O pensamento que eu ouço",
+          "data": 1794851283,
+          "link": "https://www.tiktok.com/@nino.historia/video/7708827527409700104?utm_campaign=tt4d_open_api&utm_source=sbawoxjnm20dli8mu2",
+          "views": 4200,
+          "likes": 383,
+          "comentarios": 6,
+          "compartilhamentos": 4,
+          "duracao_s": 164
+        }
+      ]
     }
   }
 }
