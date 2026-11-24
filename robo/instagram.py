@@ -69,10 +69,31 @@ def renovar(cofre):
     return True
 
 
+def _ja_postado(G, uid, tk, legenda):
+    import datetime
+    r = requests.get(f"{G}/{uid}/media", params={"fields": "id,caption,timestamp,permalink", "limit": 15, "access_token": tk}, timeout=60)
+    if not r.ok:
+        return None
+    agora = datetime.datetime.now(datetime.timezone.utc)
+    for m in r.json().get("data", []):
+        try:
+            quando = datetime.datetime.strptime(m["timestamp"], "%Y-%m-%dT%H:%M:%S%z")
+        except Exception:
+            continue
+        if (m.get("caption") or "").strip() == legenda.strip() and agora - quando < datetime.timedelta(hours=24):
+            print("   Instagram: essa legenda já foi postada, não vou repetir:", m.get("permalink"))
+            return {"id": m["id"], "link": m.get("permalink", ""), "obs": "já estava postado (trava contra duplicado)"}
+    return None
+
+
 def postar(cofre, post, arquivo, cfg):
     ig = cofre["instagram"]
     tk, uid = ig["token"], ig["user_id"]
     G = _g(ig)
+    # Trava contra post duplicado: se a mesma legenda já saiu nas últimas 24 h, não posta de novo.
+    ja = _ja_postado(G, uid, tk, post["legenda"])
+    if ja:
+        return ja
     c = checar(requests.post(f"{G}/{uid}/media", data={
         "media_type": "REELS", "video_url": post["video"], "caption": post["legenda"],
         "share_to_feed": "true", "access_token": tk}, timeout=120)).json()
