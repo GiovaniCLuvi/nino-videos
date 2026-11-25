@@ -107,9 +107,9 @@
       "redes": {
         "instagram": {
           "status": "erro",
-          "tentativas": 1,
-          "motivo": "Instagram recusou o vídeo: {'id': '17996316884860811', 'status': 'Error: Media upload has failed with error code 2207085', 'status_code': 'ERROR'}",
-          "em": "2026-11-25T12:10-03:00"
+          "tentativas": 2,
+          "motivo": "Instagram recusou o vídeo: {'id': '17996320220860811', 'status': 'Error: Media upload has failed with error code 2207085', 'status_code': 'ERROR'}",
+          "em": "2026-11-25T12:25-03:00"
         },
         "youtube": {
           "status": "pausada",
@@ -118,9 +118,9 @@
         "tiktok": {
           "status": "erro",
           "zernio_erro": "Zernio/TikTok falhou: Unsupported media format. Please ensure your video is MP4/MOV/WebM format, or images are JPG/PNG format.",
-          "tentativas": 1,
+          "tentativas": 2,
           "motivo": "TikTok falhou: file_format_check_failed",
-          "em": "2026-11-25T12:11-03:00"
+          "em": "2026-11-25T12:26-03:00"
         }
       }
     },
