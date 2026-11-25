@@ -136,13 +136,24 @@
       "comentario": "Pra quem cresceu com duas casas: não foi culpa sua 🤍",
       "redes": {
         "instagram": {
-          "status": "pendente"
+          "status": "postado",
+          "em": "2026-11-25T18:05-03:00",
+          "id": "18145107097720302",
+          "link": "https://www.instagram.com/reel/DgLdA0LJ7lg/",
+          "comentario": "feito (fixar no app)"
         },
         "youtube": {
-          "status": "pendente"
+          "status": "pausada",
+          "motivo": "rede pausada em config.redes_pausadas"
         },
         "tiktok": {
-          "status": "pendente"
+          "status": "postado",
+          "em": "2026-11-25T18:05-03:00",
+          "id": "6b074d94fb9517f703ef30f6",
+          "estado": "published",
+          "modo": "zernio",
+          "conta": "nino.historia",
+          "link": null
         }
       }
     },
