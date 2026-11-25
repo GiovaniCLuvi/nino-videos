@@ -99,28 +99,21 @@
     },
     {
       "id": "regra-09-a-linha-da-pipa",
-      "quando": "2026-11-25T12:00:00-03:00",
+      "quando": "2026-11-25T13:45:00-03:00",
       "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C09-a-linha-da-pipa.mp4",
       "titulo": "A linha da pipa",
       "legenda": "Regra nº 9 da minha rua 🪁 #historias #animacao #amizade #reflexao",
       "comentario": "Marca aquele amigo que mora longe e puxa a linha hoje 🤍",
       "redes": {
         "instagram": {
-          "status": "erro",
-          "tentativas": 3,
-          "motivo": "Instagram recusou o vídeo: {'id': '17996323049860811', 'status': 'Error: Media upload has failed with error code 2207085', 'status_code': 'ERROR'}",
-          "em": "2026-11-25T12:40-03:00"
+          "status": "pendente"
         },
         "youtube": {
           "status": "pausada",
           "motivo": "rede pausada em config.redes_pausadas"
         },
         "tiktok": {
-          "status": "erro",
-          "zernio_erro": "Zernio/TikTok falhou: Unsupported media format. Please ensure your video is MP4/MOV/WebM format, or images are JPG/PNG format.",
-          "tentativas": 3,
-          "motivo": "TikTok falhou: file_format_check_failed",
-          "em": "2026-11-25T12:41-03:00"
+          "status": "pendente"
         }
       }
     },
