@@ -180,7 +180,8 @@
           "status": "pendente"
         },
         "tiktok": {
-          "status": "pendente"
+          "status": "manual",
+          "motivo": "teste: postado à mão pelo app do TikTok"
         }
       }
     },
