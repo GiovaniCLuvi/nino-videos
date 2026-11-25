@@ -106,14 +106,22 @@
       "comentario": "Marca aquele amigo que mora longe e puxa a linha hoje 🤍",
       "redes": {
         "instagram": {
-          "status": "pendente"
+          "status": "postado",
+          "em": "2026-11-25T13:49-03:00",
+          "id": "18117387260464737",
+          "link": "https://www.instagram.com/reel/DgK_uejhiqA/",
+          "comentario": "feito (fixar no app)"
         },
         "youtube": {
           "status": "pausada",
           "motivo": "rede pausada em config.redes_pausadas"
         },
         "tiktok": {
-          "status": "pendente"
+          "status": "rascunho_no_tiktok",
+          "em": "2026-11-25T13:50-03:00",
+          "id": "v_inbox_file~v2.7712151972077537332",
+          "estado": "SEND_TO_USER_INBOX",
+          "modo": "rascunho"
         }
       }
     },
