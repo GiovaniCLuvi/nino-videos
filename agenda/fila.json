@@ -98,8 +98,8 @@
       }
     },
     {
-      "id": "regra-09-a-linha-da-pipa",
-      "quando": "2026-11-25T13:45:00-03:00",
+      "id": "regra-09b-a-linha-da-pipa",
+      "quando": "2026-11-25T16:45:00-03:00",
       "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C09-a-linha-da-pipa.mp4",
       "titulo": "A linha da pipa",
       "legenda": "Regra nº 9 da minha rua 🪁 #historias #animacao #amizade #reflexao",
@@ -117,11 +117,7 @@
           "motivo": "rede pausada em config.redes_pausadas"
         },
         "tiktok": {
-          "status": "rascunho_no_tiktok",
-          "em": "2026-11-25T13:50-03:00",
-          "id": "v_inbox_file~v2.7712151972077537332",
-          "estado": "SEND_TO_USER_INBOX",
-          "modo": "rascunho"
+          "status": "pendente"
         }
       }
     },
