@@ -166,13 +166,24 @@
       "comentario": "Você já riu junto sem perceber que machucava? 🤍",
       "redes": {
         "instagram": {
-          "status": "pendente"
+          "status": "postado",
+          "em": "2026-11-25T21:04-03:00",
+          "id": "18164387191456222",
+          "link": "https://www.instagram.com/reel/DgLxe53JYlC/",
+          "comentario": "feito (fixar no app)"
         },
         "youtube": {
-          "status": "pendente"
+          "status": "pausada",
+          "motivo": "rede pausada em config.redes_pausadas"
         },
         "tiktok": {
-          "status": "pendente"
+          "status": "postado",
+          "em": "2026-11-25T21:04-03:00",
+          "id": "6b077783b9021efcc65b13d7",
+          "estado": "published",
+          "modo": "zernio",
+          "conta": "nino.historia",
+          "link": null
         }
       }
     },
