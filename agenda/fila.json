@@ -243,7 +243,11 @@
       "comentario": "Comenta seu nome aqui 👇 e a regra que você quer ver na rua!",
       "redes": {
         "instagram": {
-          "status": "pendente"
+          "status": "postado",
+          "em": "2026-11-26T14:04-03:00",
+          "id": "18352828480249517",
+          "link": "https://www.instagram.com/reel/DgNmQ_aKjOl/",
+          "comentario": "feito (fixar no app)"
         },
         "youtube": {
           "status": "so_tiktok"
