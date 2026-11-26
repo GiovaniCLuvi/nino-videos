@@ -227,7 +227,13 @@
           "status": "so_tiktok"
         },
         "tiktok": {
-          "status": "pendente"
+          "status": "postado",
+          "em": "2026-11-26T12:48-03:00",
+          "id": "6b0854d2b5066a048fa31a82",
+          "estado": "published",
+          "modo": "zernio",
+          "conta": "nino.historia",
+          "link": null
         }
       }
     },
