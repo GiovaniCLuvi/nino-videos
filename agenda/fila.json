@@ -224,7 +224,13 @@
           "motivo": "rede pausada em config.redes_pausadas"
         },
         "tiktok": {
-          "status": "pendente"
+          "status": "postado",
+          "em": "2026-11-26T13:49-03:00",
+          "id": "6b0862e88ddf1f41b1937be6",
+          "estado": "published",
+          "modo": "zernio",
+          "conta": "nino.historia",
+          "link": null
         }
       }
     },
