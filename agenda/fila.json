@@ -652,13 +652,23 @@
       "comentario": "Qual era a regra mais estranha da sua casa quando você era criança? E por quê? 👇",
       "redes": {
         "instagram": {
-          "status": "pendente"
+          "status": "postado",
+          "em": "2026-11-26T18:04-03:00",
+          "id": "18418856512081651",
+          "link": "https://www.instagram.com/reel/DgOBsL8uVSo/",
+          "comentario": "feito (fixar no app)"
         },
         "youtube": {
           "status": "so_manual"
         },
         "tiktok": {
-          "status": "pendente"
+          "status": "postado",
+          "em": "2026-11-26T18:04-03:00",
+          "id": "6b089ed1424fa1f3927bc212",
+          "estado": "published",
+          "modo": "zernio",
+          "conta": "nino.historia",
+          "link": null
         }
       }
     },
