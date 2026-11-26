@@ -1,596 +1,615 @@
 {
-  "_leia": "Agenda do robô. Cada post tem 'quando' (horário de Brasília) e o estado em cada rede: pendente, postado, rascunho_no_tiktok, erro, perdido. Redes em config.redes_pausadas ficam de fora (YouTube, até a auditoria do Google).",
-  "config": {
-    "atraso_max_horas": 3,
-    "youtube_privacidade": "public",
-    "tiktok_modo": "zernio",
-    "tiktok_privacidade": "SELF_ONLY",
-    "redes_pausadas": [
-      "youtube"
-    ]
-  },
-  "posts": [
-    {
-      "id": "teste-tiktok-rascunho",
-      "quando": "2026-11-23T16:30:00-03:00",
-      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/claude/project-thread-8oiym3/videos/07-as-pedrinhas-da-mentira.mp4",
-      "titulo": "TESTE do robô",
-      "legenda": "TESTE do robô (pode apagar)",
-      "comentario": "",
-      "redes": {
-        "tiktok": {
-          "status": "rascunho_no_tiktok",
-          "em": "2026-11-23T16:39-03:00",
-          "id": "v_inbox_file~v2.7711453135910324230",
-          "estado": "SEND_TO_USER_INBOX",
-          "modo": "rascunho"
-        }
-      }
-    },
-    {
-      "id": "shop-01-pisca-pisca-tiktok",
-      "quando": "2026-11-24T07:48:00-03:00",
-      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/claude/project-thread-9ybu29/videos/S01-como-o-pisca-pisca-sabe-a-hora-de-piscar.mp4",
-      "titulo": "Como o pisca-pisca sabe a hora de piscar?",
-      "legenda": "Como o pisca-pisca sabe a hora de piscar? 🎄✨ O link tá no carrinho laranja 🧡 #piscapisca #natal #curiosidades #tiktokshop #achadinhos #animacao",
-      "comentario": "E o seu, fica piscando ou parado? 🎄",
-      "tiktok_modo": "rascunho",
-      "nota": "Video de produto (TikTok Shop): vai para o rascunho para a pessoa marcar o produto (pisca-pisca 100 LED 9m, Neverdie Store.br) antes de publicar.",
-      "redes": {
-        "tiktok": {
-          "status": "rascunho_no_tiktok",
-          "em": "2026-11-24T08:17-03:00",
-          "id": "v_inbox_file~v2.7711695104725239829",
-          "estado": "SEND_TO_USER_INBOX",
-          "modo": "rascunho"
-        }
-      }
-    },
-    {
-      "id": "shop-01-pisca-pisca",
-      "quando": "2026-11-24T12:03:00-03:00",
-      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/claude/project-thread-9ybu29/videos/S01-como-o-pisca-pisca-sabe-a-hora-de-piscar.mp4",
-      "titulo": "Como o pisca-pisca sabe a hora de piscar?",
-      "legenda": "Como o pisca-pisca sabe a hora de piscar? 🎄✨ A resposta tem 140 anos de história. #piscapisca #natal #curiosidades #animacao #historia",
-      "comentario": "E o seu, fica piscando ou parado? 🎄",
-      "redes": {
-        "instagram": {
-          "status": "postado",
-          "em": "2026-11-24T12:12-03:00",
-          "id": "18104505830542557",
-          "link": "https://www.instagram.com/reel/DgIP4aciEKk/",
-          "comentario": "feito (fixar no app)"
-        },
-        "youtube": {
-          "status": "pausada",
-          "motivo": "rede pausada em config.redes_pausadas"
-        }
-      }
-    },
-    {
-      "id": "regra-08-as-pedrinhas-da-mentira",
-      "quando": "2026-11-24T18:00:00-03:00",
-      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C08-as-pedrinhas-da-mentira.mp4",
-      "titulo": "As pedrinhas da mentira",
-      "legenda": "Regra nº 8 da minha rua 🪨 #historias #animacao #mae #reflexao",
-      "comentario": "Qual mentira de amor sua mãe te contava? 🤍",
-      "redes": {
-        "instagram": {
-          "status": "postado",
-          "em": "2026-11-24T18:04-03:00",
-          "id": "18119565113582784",
-          "link": "https://www.instagram.com/reel/DgI4HCWibAA/",
-          "comentario": "feito (fixar no app)"
-        },
-        "youtube": {
-          "status": "pausada",
-          "motivo": "rede pausada em config.redes_pausadas"
-        },
-        "tiktok": {
-          "status": "postado",
-          "em": "2026-11-24T18:04-03:00",
-          "id": "6b05fbdecf104af92acdfdd1",
-          "estado": "published",
-          "modo": "zernio",
-          "conta": "nino.historia",
-          "link": null
-        }
-      }
-    },
-    {
-      "id": "regra-09b-a-linha-da-pipa",
-      "quando": "2026-11-25T16:45:00-03:00",
-      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C09-a-linha-da-pipa.mp4",
-      "titulo": "A linha da pipa",
-      "legenda": "Regra nº 9 da minha rua 🪁 #historias #animacao #amizade #reflexao",
-      "comentario": "Marca aquele amigo que mora longe e puxa a linha hoje 🤍",
-      "redes": {
-        "instagram": {
-          "status": "postado",
-          "em": "2026-11-25T13:49-03:00",
-          "id": "18117387260464737",
-          "link": "https://www.instagram.com/reel/DgK_uejhiqA/",
-          "comentario": "feito (fixar no app)"
-        },
-        "youtube": {
-          "status": "pausada",
-          "motivo": "rede pausada em config.redes_pausadas"
-        },
-        "tiktok": {
-          "status": "postado",
-          "em": "2026-11-25T16:49-03:00",
-          "id": "6b073b9db436184d7f496802",
-          "estado": "published",
-          "modo": "zernio",
-          "conta": "nino.historia",
-          "link": null
-        }
-      }
-    },
-    {
-      "id": "regra-10-a-lua-partida",
-      "quando": "2026-11-25T18:00:00-03:00",
-      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C10-a-lua-partida.mp4",
-      "titulo": "A lua partida",
-      "legenda": "Regra nº 10 da minha rua 🌙 #historias #animacao #familia #reflexao",
-      "comentario": "Pra quem cresceu com duas casas: não foi culpa sua 🤍",
-      "redes": {
-        "instagram": {
-          "status": "postado",
-          "em": "2026-11-25T18:05-03:00",
-          "id": "18145107097720302",
-          "link": "https://www.instagram.com/reel/DgLdA0LJ7lg/",
-          "comentario": "feito (fixar no app)"
-        },
-        "youtube": {
-          "status": "pausada",
-          "motivo": "rede pausada em config.redes_pausadas"
-        },
-        "tiktok": {
-          "status": "postado",
-          "em": "2026-11-25T18:05-03:00",
-          "id": "6b074d94fb9517f703ef30f6",
-          "estado": "published",
-          "modo": "zernio",
-          "conta": "nino.historia",
-          "link": null
-        }
-      }
-    },
-    {
-      "id": "regra-11-os-adesivos-da-risada",
-      "quando": "2026-11-25T21:00:00-03:00",
-      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C11-os-adesivos-da-risada.mp4",
-      "titulo": "Os adesivos da risada",
-      "legenda": "Regra nº 11 da minha rua 🏷️ #historias #animacao #escola #reflexao",
-      "comentario": "Você já riu junto sem perceber que machucava? 🤍",
-      "redes": {
-        "instagram": {
-          "status": "postado",
-          "em": "2026-11-25T21:04-03:00",
-          "id": "18164387191456222",
-          "link": "https://www.instagram.com/reel/DgLxe53JYlC/",
-          "comentario": "feito (fixar no app)"
-        },
-        "youtube": {
-          "status": "pausada",
-          "motivo": "rede pausada em config.redes_pausadas"
-        },
-        "tiktok": {
-          "status": "postado",
-          "em": "2026-11-25T21:04-03:00",
-          "id": "6b077783b9021efcc65b13d7",
-          "estado": "published",
-          "modo": "zernio",
-          "conta": "nino.historia",
-          "link": null
-        }
-      }
-    },
-    {
-      "id": "regra-12-as-letras-do-nome",
-      "quando": "2026-11-26T12:00:00-03:00",
-      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C12-as-letras-do-nome.mp4",
-      "titulo": "As letras do nome",
-      "legenda": "Regra nº 12 da minha rua 🔤 #historias #animacao #avo #reflexao",
-      "comentario": "Liga hoje pra alguém que tá perdendo letras 🤍",
-      "redes": {
-        "instagram": {
-          "status": "postado",
-          "em": "2026-11-26T12:04-03:00",
-          "id": "18102239408103154",
-          "link": "https://www.instagram.com/reel/DgNYi2Sq29E/",
-          "comentario": "feito (fixar no app)"
-        },
-        "youtube": {
-          "status": "pausada",
-          "motivo": "rede pausada em config.redes_pausadas"
-        },
-        "tiktok": {
-          "status": "manual",
-          "motivo": "teste: postado à mão pelo app do TikTok"
-        }
-      }
-    },
-    {
-      "id": "regra-13-a-fumaca-do-desejo",
-      "quando": "2026-11-26T18:00:00-03:00",
-      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C13-a-fumaca-do-desejo.mp4",
-      "titulo": "A fumaça do desejo",
-      "legenda": "Regra nº 13 da minha rua 🎂 #historias #animacao #pai #reflexao",
-      "comentario": "Qual seria o desejo inteiro do seu pai? 🤍",
-      "redes": {
-        "instagram": {
-          "status": "pendente"
-        },
-        "youtube": {
-          "status": "pendente"
-        },
-        "tiktok": {
-          "status": "pendente"
-        }
-      }
-    },
-    {
-      "id": "regra-14-os-baloes-no-teto",
-      "quando": "2026-11-26T21:00:00-03:00",
-      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C14-os-baloes-no-teto.mp4",
-      "titulo": "Os balões no teto",
-      "legenda": "Regra nº 14 da minha rua 🎈 #historias #animacao #pai #sonhos",
-      "comentario": "Qual balão tá preso no seu teto? 🎈🤍",
-      "redes": {
-        "instagram": {
-          "status": "pendente"
-        },
-        "youtube": {
-          "status": "pendente"
-        },
-        "tiktok": {
-          "status": "pendente"
-        }
-      }
-    },
-    {
-      "id": "regra-15-a-sombra-do-valentao",
-      "quando": "2026-11-27T12:00:00-03:00",
-      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C15-a-sombra-do-valentao.mp4",
-      "titulo": "A sombra do valentão",
-      "legenda": "Regra nº 15 da minha rua 🌑 #historias #animacao #escola #bullying",
-      "comentario": "Qual o tamanho da sua sombra hoje? 🤍",
-      "redes": {
-        "instagram": {
-          "status": "pendente"
-        },
-        "youtube": {
-          "status": "pendente"
-        },
-        "tiktok": {
-          "status": "pendente"
-        }
-      }
-    },
-    {
-      "id": "regra-16-a-vo-que-encolhia",
-      "quando": "2026-11-27T18:00:00-03:00",
-      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C16-a-vo-que-encolhia.mp4",
-      "titulo": "A vó que encolhia",
-      "legenda": "Regra nº 16 da minha rua 🧵 #historias #animacao #avó #familia",
-      "comentario": "O que você ainda pede pra sua avó te ensinar? 🤍",
-      "redes": {
-        "instagram": {
-          "status": "pendente"
-        },
-        "youtube": {
-          "status": "pendente"
-        },
-        "tiktok": {
-          "status": "pendente"
-        }
-      }
-    },
-    {
-      "id": "regra-17-o-dia-da-bateria",
-      "quando": "2026-11-27T21:00:00-03:00",
-      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C17-o-dia-da-bateria.mp4",
-      "titulo": "O dia da bateria",
-      "legenda": "Regra nº 17 da minha rua 🧵 #historias #animacao #pai #familia",
-      "comentario": "Qual lembrança sua não tem foto nenhuma, e você lembra inteirinha? 🤍",
-      "redes": {
-        "instagram": {
-          "status": "pendente"
-        },
-        "youtube": {
-          "status": "pendente"
-        },
-        "tiktok": {
-          "status": "pendente"
-        }
-      }
-    },
-    {
-      "id": "regra-18-a-cara-da-fofoca",
-      "quando": "2026-11-28T12:00:00-03:00",
-      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C18-a-cara-da-fofoca.mp4",
-      "titulo": "A cara da fofoca",
-      "legenda": "Regra nº 18 da minha rua 🧵 #historias #animacao #fofoca #vizinhos",
-      "comentario": "Toda rua tem uma 'bruxa'. Qual era a história de verdade da sua? 🤍",
-      "redes": {
-        "instagram": {
-          "status": "pendente"
-        },
-        "youtube": {
-          "status": "pendente"
-        },
-        "tiktok": {
-          "status": "pendente"
-        }
-      }
-    },
-    {
-      "id": "regra-19-o-casulo-do-e-se",
-      "quando": "2026-11-28T18:00:00-03:00",
-      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C19-o-casulo-do-e-se.mp4",
-      "titulo": "O casulo do \"e se\"",
-      "legenda": "Regra nº 19 da minha rua 🧵 #historias #animacao #ansiedade #mae",
-      "comentario": "Escreve aqui um 'e se der certo' pra você 🤍",
-      "redes": {
-        "instagram": {
-          "status": "pendente"
-        },
-        "youtube": {
-          "status": "pendente"
-        },
-        "tiktok": {
-          "status": "pendente"
-        }
-      }
-    },
-    {
-      "id": "regra-20-as-estatuas-da-praca",
-      "quando": "2026-11-28T21:00:00-03:00",
-      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C20-as-estatuas-da-praca.mp4",
-      "titulo": "As estátuas da praça",
-      "legenda": "Regra nº 20 da minha rua 🗿 #historias #animacao #familia #avo",
-      "comentario": "Manda um bom dia hoje pra alguém que você não fala faz tempo 🤍",
-      "redes": {
-        "instagram": {
-          "status": "pendente"
-        },
-        "youtube": {
-          "status": "pendente"
-        },
-        "tiktok": {
-          "status": "pendente"
-        }
-      }
-    },
-    {
-      "id": "regra-21-a-nuvem-da-minha-mae",
-      "quando": "2026-11-29T12:00:00-03:00",
-      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C21-a-nuvem-da-minha-mae.mp4",
-      "titulo": "A nuvem da minha mãe",
-      "legenda": "Regra nº 21 da minha rua 🌧️ #historias #animacao #mae #saudemental",
-      "comentario": "Às vezes a chuva que você sente não é sua. Se precisar conversar, o CVV atende de graça no 188, a qualquer hora 🤍",
-      "redes": {
-        "instagram": {
-          "status": "pendente"
-        },
-        "youtube": {
-          "status": "pendente"
-        },
-        "tiktok": {
-          "status": "pendente"
-        }
-      }
-    },
-    {
-      "id": "regra-22-a-troca-de-pais",
-      "quando": "2026-11-29T18:00:00-03:00",
-      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C22-a-troca-de-pais.mp4",
-      "titulo": "O dia de trocar de pais",
-      "legenda": "Regra nº 22 da minha rua 🏠 #historias #animacao #familia #infancia",
-      "comentario": "Você trocaria? Por um dia? 🤍",
-      "redes": {
-        "instagram": {
-          "status": "pendente"
-        },
-        "youtube": {
-          "status": "pendente"
-        },
-        "tiktok": {
-          "status": "pendente"
-        }
-      }
-    },
-    {
-      "id": "regra-23-as-borboletas-no-bolso",
-      "quando": "2026-11-29T21:00:00-03:00",
-      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C23-as-borboletas-no-bolso.mp4",
-      "titulo": "As borboletas no bolso",
-      "legenda": "Regra nº 23 da minha rua 🦋 #historias #animacao #pai #familia",
-      "comentario": "Que elogio você nunca ouviu, e queria ouvir? 🤍",
-      "redes": {
-        "instagram": {
-          "status": "pendente"
-        },
-        "youtube": {
-          "status": "pendente"
-        },
-        "tiktok": {
-          "status": "pendente"
-        }
-      }
-    },
-    {
-      "id": "regra-24-a-menina-do-armario",
-      "quando": "2026-11-30T12:00:00-03:00",
-      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C24-a-menina-do-armario.mp4",
-      "titulo": "A menina do armário",
-      "legenda": "Regra nº 24 da minha rua 👻 #historias #animacao #mae #familia",
-      "comentario": "Quem você era antes de virar adulto? Conta aqui 🤍",
-      "redes": {
-        "instagram": {
-          "status": "pendente"
-        },
-        "youtube": {
-          "status": "pendente"
-        },
-        "tiktok": {
-          "status": "pendente"
-        }
-      }
-    },
-    {
-      "id": "regra-25-a-loja-de-horas",
-      "quando": "2026-11-30T18:00:00-03:00",
-      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C25-a-loja-de-horas.mp4",
-      "titulo": "A loja de horas",
-      "legenda": "Regra nº 25 da minha rua ⏳ #historias #animacao #pai #familia",
-      "comentario": "Quantos sábados o seu pai vendeu por você? 🤍",
-      "redes": {
-        "instagram": {
-          "status": "pendente"
-        },
-        "youtube": {
-          "status": "pendente"
-        },
-        "tiktok": {
-          "status": "pendente"
-        }
-      }
-    },
-    {
-      "id": "regra-26-o-fio-do-coracao",
-      "quando": "2026-11-30T21:00:00-03:00",
-      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C26-o-fio-do-coracao.mp4",
-      "titulo": "O fio do coração",
-      "legenda": "Regra nº 26 da minha rua 🧵 #historias #animacao #adocao #familia",
-      "comentario": "Pra toda família que se escolheu 🤍",
-      "redes": {
-        "instagram": {
-          "status": "pendente"
-        },
-        "youtube": {
-          "status": "pendente"
-        },
-        "tiktok": {
-          "status": "pendente"
-        }
-      }
-    },
-    {
-      "id": "regra-27-o-guarda-chuva",
-      "quando": "2026-12-01T12:00:00-03:00",
-      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C27-o-guarda-chuva.mp4",
-      "titulo": "O guarda-chuva",
-      "legenda": "Regra nº 27 da minha rua ☂️ #historias #animacao #pai #familia",
-      "comentario": "Quem segura o guarda-chuva em cima de você? 🤍",
-      "redes": {
-        "instagram": {
-          "status": "pendente"
-        },
-        "youtube": {
-          "status": "pendente"
-        },
-        "tiktok": {
-          "status": "pendente"
-        }
-      }
-    },
-    {
-      "id": "regra-28-a-cor-da-lara",
-      "quando": "2026-12-01T18:00:00-03:00",
-      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C28-a-cor-da-lara.mp4",
-      "titulo": "A cor da Lara",
-      "legenda": "Regra nº 28 da minha rua 🎨 #historias #animacao #familia #irmaos",
-      "comentario": "Quem você precisa escutar hoje, sem olhar o celular? 🤍",
-      "redes": {
-        "instagram": {
-          "status": "pendente"
-        },
-        "youtube": {
-          "status": "pendente"
-        },
-        "tiktok": {
-          "status": "pendente"
-        }
-      }
-    },
-    {
-      "id": "regra-29-a-luz-na-janela",
-      "quando": "2026-12-01T21:00:00-03:00",
-      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C29-a-luz-na-janela.mp4",
-      "titulo": "A luz na janela",
-      "legenda": "Regra nº 29 da minha rua 🕯️ #historias #animacao #avó #pai",
-      "comentario": "Qual luz você pode acender hoje com uma ligação? 🤍",
-      "redes": {
-        "instagram": {
-          "status": "pendente"
-        },
-        "youtube": {
-          "status": "pendente"
-        },
-        "tiktok": {
-          "status": "pendente"
-        }
-      }
-    },
-    {
-      "id": "regra-30-a-banca-das-lembrancas",
-      "quando": "2026-12-02T12:00:00-03:00",
-      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C30-a-banca-das-lembrancas.mp4",
-      "titulo": "A banca das lembranças",
-      "legenda": "Regra nº 30 da minha rua 🫙 #historias #animacao #avô #saudade",
-      "comentario": "Qual lembrança você nunca venderia? 🤍",
-      "redes": {
-        "instagram": {
-          "status": "pendente"
-        },
-        "youtube": {
-          "status": "pendente"
-        },
-        "tiktok": {
-          "status": "pendente"
-        }
-      }
-    },
-    {
-      "id": "regra-31-o-muro-entre-irmaos",
-      "quando": "2026-12-02T18:00:00-03:00",
-      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C31-o-muro-entre-irmaos.mp4",
-      "titulo": "O muro entre irmãos",
-      "legenda": "Regra nº 31 da minha rua 🧱 #historias #animacao #irmaos #familia",
-      "comentario": "Com quem você precisa derrubar um tijolo hoje? 🤍",
-      "redes": {
-        "instagram": {
-          "status": "pendente"
-        },
-        "youtube": {
-          "status": "pendente"
-        },
-        "tiktok": {
-          "status": "pendente"
-        }
-      }
-    },
-    {
-      "id": "regra-32-o-banco-da-praca",
-      "quando": "2026-12-02T21:00:00-03:00",
-      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C32-o-banco-da-praca.mp4",
-      "titulo": "O banco da praça",
-      "legenda": "Regra nº 32 da minha rua 🍃 #historias #animacao #pai #familia",
-      "comentario": "Se você sentasse no banco, que idade você viraria? 🤍",
-      "redes": {
-        "instagram": {
-          "status": "pendente"
-        },
-        "youtube": {
-          "status": "pendente"
-        },
-        "tiktok": {
-          "status": "pendente"
-        }
-      }
-    }
+ "_leia": "Agenda do robô. Cada post tem 'quando' (horário de Brasília) e o estado em cada rede: pendente, postado, rascunho_no_tiktok, erro, perdido. Redes em config.redes_pausadas ficam de fora (YouTube, até a auditoria do Google).",
+ "config": {
+  "atraso_max_horas": 3,
+  "youtube_privacidade": "public",
+  "tiktok_modo": "zernio",
+  "tiktok_privacidade": "SELF_ONLY",
+  "redes_pausadas": [
+   "youtube"
   ]
+ },
+ "posts": [
+  {
+   "id": "teste-tiktok-rascunho",
+   "quando": "2026-11-23T16:30:00-03:00",
+   "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/claude/project-thread-8oiym3/videos/07-as-pedrinhas-da-mentira.mp4",
+   "titulo": "TESTE do robô",
+   "legenda": "TESTE do robô (pode apagar)",
+   "comentario": "",
+   "redes": {
+    "tiktok": {
+     "status": "rascunho_no_tiktok",
+     "em": "2026-11-23T16:39-03:00",
+     "id": "v_inbox_file~v2.7711453135910324230",
+     "estado": "SEND_TO_USER_INBOX",
+     "modo": "rascunho"
+    }
+   }
+  },
+  {
+   "id": "shop-01-pisca-pisca-tiktok",
+   "quando": "2026-11-24T07:48:00-03:00",
+   "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/claude/project-thread-9ybu29/videos/S01-como-o-pisca-pisca-sabe-a-hora-de-piscar.mp4",
+   "titulo": "Como o pisca-pisca sabe a hora de piscar?",
+   "legenda": "Como o pisca-pisca sabe a hora de piscar? 🎄✨ O link tá no carrinho laranja 🧡 #piscapisca #natal #curiosidades #tiktokshop #achadinhos #animacao",
+   "comentario": "E o seu, fica piscando ou parado? 🎄",
+   "tiktok_modo": "rascunho",
+   "nota": "Video de produto (TikTok Shop): vai para o rascunho para a pessoa marcar o produto (pisca-pisca 100 LED 9m, Neverdie Store.br) antes de publicar.",
+   "redes": {
+    "tiktok": {
+     "status": "rascunho_no_tiktok",
+     "em": "2026-11-24T08:17-03:00",
+     "id": "v_inbox_file~v2.7711695104725239829",
+     "estado": "SEND_TO_USER_INBOX",
+     "modo": "rascunho"
+    }
+   }
+  },
+  {
+   "id": "shop-01-pisca-pisca",
+   "quando": "2026-11-24T12:03:00-03:00",
+   "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/claude/project-thread-9ybu29/videos/S01-como-o-pisca-pisca-sabe-a-hora-de-piscar.mp4",
+   "titulo": "Como o pisca-pisca sabe a hora de piscar?",
+   "legenda": "Como o pisca-pisca sabe a hora de piscar? 🎄✨ A resposta tem 140 anos de história. #piscapisca #natal #curiosidades #animacao #historia",
+   "comentario": "E o seu, fica piscando ou parado? 🎄",
+   "redes": {
+    "instagram": {
+     "status": "postado",
+     "em": "2026-11-24T12:12-03:00",
+     "id": "18104505830542557",
+     "link": "https://www.instagram.com/reel/DgIP4aciEKk/",
+     "comentario": "feito (fixar no app)"
+    },
+    "youtube": {
+     "status": "pausada",
+     "motivo": "rede pausada em config.redes_pausadas"
+    }
+   }
+  },
+  {
+   "id": "regra-08-as-pedrinhas-da-mentira",
+   "quando": "2026-11-24T18:00:00-03:00",
+   "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C08-as-pedrinhas-da-mentira.mp4",
+   "titulo": "As pedrinhas da mentira",
+   "legenda": "Regra nº 8 da minha rua 🪨 #historias #animacao #mae #reflexao",
+   "comentario": "Qual mentira de amor sua mãe te contava? 🤍",
+   "redes": {
+    "instagram": {
+     "status": "postado",
+     "em": "2026-11-24T18:04-03:00",
+     "id": "18119565113582784",
+     "link": "https://www.instagram.com/reel/DgI4HCWibAA/",
+     "comentario": "feito (fixar no app)"
+    },
+    "youtube": {
+     "status": "pausada",
+     "motivo": "rede pausada em config.redes_pausadas"
+    },
+    "tiktok": {
+     "status": "postado",
+     "em": "2026-11-24T18:04-03:00",
+     "id": "6b05fbdecf104af92acdfdd1",
+     "estado": "published",
+     "modo": "zernio",
+     "conta": "nino.historia",
+     "link": null
+    }
+   }
+  },
+  {
+   "id": "regra-09b-a-linha-da-pipa",
+   "quando": "2026-11-25T16:45:00-03:00",
+   "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C09-a-linha-da-pipa.mp4",
+   "titulo": "A linha da pipa",
+   "legenda": "Regra nº 9 da minha rua 🪁 #historias #animacao #amizade #reflexao",
+   "comentario": "Marca aquele amigo que mora longe e puxa a linha hoje 🤍",
+   "redes": {
+    "instagram": {
+     "status": "postado",
+     "em": "2026-11-25T13:49-03:00",
+     "id": "18117387260464737",
+     "link": "https://www.instagram.com/reel/DgK_uejhiqA/",
+     "comentario": "feito (fixar no app)"
+    },
+    "youtube": {
+     "status": "pausada",
+     "motivo": "rede pausada em config.redes_pausadas"
+    },
+    "tiktok": {
+     "status": "postado",
+     "em": "2026-11-25T16:49-03:00",
+     "id": "6b073b9db436184d7f496802",
+     "estado": "published",
+     "modo": "zernio",
+     "conta": "nino.historia",
+     "link": null
+    }
+   }
+  },
+  {
+   "id": "regra-10-a-lua-partida",
+   "quando": "2026-11-25T18:00:00-03:00",
+   "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C10-a-lua-partida.mp4",
+   "titulo": "A lua partida",
+   "legenda": "Regra nº 10 da minha rua 🌙 #historias #animacao #familia #reflexao",
+   "comentario": "Pra quem cresceu com duas casas: não foi culpa sua 🤍",
+   "redes": {
+    "instagram": {
+     "status": "postado",
+     "em": "2026-11-25T18:05-03:00",
+     "id": "18145107097720302",
+     "link": "https://www.instagram.com/reel/DgLdA0LJ7lg/",
+     "comentario": "feito (fixar no app)"
+    },
+    "youtube": {
+     "status": "pausada",
+     "motivo": "rede pausada em config.redes_pausadas"
+    },
+    "tiktok": {
+     "status": "postado",
+     "em": "2026-11-25T18:05-03:00",
+     "id": "6b074d94fb9517f703ef30f6",
+     "estado": "published",
+     "modo": "zernio",
+     "conta": "nino.historia",
+     "link": null
+    }
+   }
+  },
+  {
+   "id": "regra-11-os-adesivos-da-risada",
+   "quando": "2026-11-25T21:00:00-03:00",
+   "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C11-os-adesivos-da-risada.mp4",
+   "titulo": "Os adesivos da risada",
+   "legenda": "Regra nº 11 da minha rua 🏷️ #historias #animacao #escola #reflexao",
+   "comentario": "Você já riu junto sem perceber que machucava? 🤍",
+   "redes": {
+    "instagram": {
+     "status": "postado",
+     "em": "2026-11-25T21:04-03:00",
+     "id": "18164387191456222",
+     "link": "https://www.instagram.com/reel/DgLxe53JYlC/",
+     "comentario": "feito (fixar no app)"
+    },
+    "youtube": {
+     "status": "pausada",
+     "motivo": "rede pausada em config.redes_pausadas"
+    },
+    "tiktok": {
+     "status": "postado",
+     "em": "2026-11-25T21:04-03:00",
+     "id": "6b077783b9021efcc65b13d7",
+     "estado": "published",
+     "modo": "zernio",
+     "conta": "nino.historia",
+     "link": null
+    }
+   }
+  },
+  {
+   "id": "regra-12-as-letras-do-nome",
+   "quando": "2026-11-26T12:00:00-03:00",
+   "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C12-as-letras-do-nome.mp4",
+   "titulo": "As letras do nome",
+   "legenda": "Regra nº 12 da minha rua 🔤 #historias #animacao #avo #reflexao",
+   "comentario": "Liga hoje pra alguém que tá perdendo letras 🤍",
+   "redes": {
+    "instagram": {
+     "status": "postado",
+     "em": "2026-11-26T12:04-03:00",
+     "id": "18102239408103154",
+     "link": "https://www.instagram.com/reel/DgNYi2Sq29E/",
+     "comentario": "feito (fixar no app)"
+    },
+    "youtube": {
+     "status": "pausada",
+     "motivo": "rede pausada em config.redes_pausadas"
+    },
+    "tiktok": {
+     "status": "manual",
+     "motivo": "teste: postado à mão pelo app do TikTok"
+    }
+   }
+  },
+  {
+   "id": "regra-34-a-rua-do-nino",
+   "quando": "2026-11-26T12:45:00-03:00",
+   "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/claude/project-thread-4l109j/videos/novos/N35-a-rua-do-nino.mp4",
+   "titulo": "A rua do Nino",
+   "legenda": "Na minha rua, quem me segue vira vizinho 🏠 Comenta seu nome que eu pinto na sua porta! E escreve a Regra nº 35 👇 #historias #animacao #nino #aruadonino",
+   "comentario": "Comenta seu nome aqui 👇 e a regra que você quer ver na rua!",
+   "redes": {
+    "instagram": {
+     "status": "so_tiktok"
+    },
+    "youtube": {
+     "status": "so_tiktok"
+    },
+    "tiktok": {
+     "status": "pendente"
+    }
+   }
+  },
+  {
+   "id": "regra-13-a-fumaca-do-desejo",
+   "quando": "2026-11-26T18:00:00-03:00",
+   "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C13-a-fumaca-do-desejo.mp4",
+   "titulo": "A fumaça do desejo",
+   "legenda": "Regra nº 13 da minha rua 🎂 #historias #animacao #pai #reflexao",
+   "comentario": "Qual seria o desejo inteiro do seu pai? 🤍",
+   "redes": {
+    "instagram": {
+     "status": "pendente"
+    },
+    "youtube": {
+     "status": "pendente"
+    },
+    "tiktok": {
+     "status": "pendente"
+    }
+   }
+  },
+  {
+   "id": "regra-14-os-baloes-no-teto",
+   "quando": "2026-11-26T21:00:00-03:00",
+   "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C14-os-baloes-no-teto.mp4",
+   "titulo": "Os balões no teto",
+   "legenda": "Regra nº 14 da minha rua 🎈 #historias #animacao #pai #sonhos",
+   "comentario": "Qual balão tá preso no seu teto? 🎈🤍",
+   "redes": {
+    "instagram": {
+     "status": "pendente"
+    },
+    "youtube": {
+     "status": "pendente"
+    },
+    "tiktok": {
+     "status": "pendente"
+    }
+   }
+  },
+  {
+   "id": "regra-15-a-sombra-do-valentao",
+   "quando": "2026-11-27T12:00:00-03:00",
+   "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C15-a-sombra-do-valentao.mp4",
+   "titulo": "A sombra do valentão",
+   "legenda": "Regra nº 15 da minha rua 🌑 #historias #animacao #escola #bullying",
+   "comentario": "Qual o tamanho da sua sombra hoje? 🤍",
+   "redes": {
+    "instagram": {
+     "status": "pendente"
+    },
+    "youtube": {
+     "status": "pendente"
+    },
+    "tiktok": {
+     "status": "pendente"
+    }
+   }
+  },
+  {
+   "id": "regra-16-a-vo-que-encolhia",
+   "quando": "2026-11-27T18:00:00-03:00",
+   "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C16-a-vo-que-encolhia.mp4",
+   "titulo": "A vó que encolhia",
+   "legenda": "Regra nº 16 da minha rua 🧵 #historias #animacao #avó #familia",
+   "comentario": "O que você ainda pede pra sua avó te ensinar? 🤍",
+   "redes": {
+    "instagram": {
+     "status": "pendente"
+    },
+    "youtube": {
+     "status": "pendente"
+    },
+    "tiktok": {
+     "status": "pendente"
+    }
+   }
+  },
+  {
+   "id": "regra-17-o-dia-da-bateria",
+   "quando": "2026-11-27T21:00:00-03:00",
+   "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C17-o-dia-da-bateria.mp4",
+   "titulo": "O dia da bateria",
+   "legenda": "Regra nº 17 da minha rua 🧵 #historias #animacao #pai #familia",
+   "comentario": "Qual lembrança sua não tem foto nenhuma, e você lembra inteirinha? 🤍",
+   "redes": {
+    "instagram": {
+     "status": "pendente"
+    },
+    "youtube": {
+     "status": "pendente"
+    },
+    "tiktok": {
+     "status": "pendente"
+    }
+   }
+  },
+  {
+   "id": "regra-18-a-cara-da-fofoca",
+   "quando": "2026-11-28T12:00:00-03:00",
+   "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C18-a-cara-da-fofoca.mp4",
+   "titulo": "A cara da fofoca",
+   "legenda": "Regra nº 18 da minha rua 🧵 #historias #animacao #fofoca #vizinhos",
+   "comentario": "Toda rua tem uma 'bruxa'. Qual era a história de verdade da sua? 🤍",
+   "redes": {
+    "instagram": {
+     "status": "pendente"
+    },
+    "youtube": {
+     "status": "pendente"
+    },
+    "tiktok": {
+     "status": "pendente"
+    }
+   }
+  },
+  {
+   "id": "regra-19-o-casulo-do-e-se",
+   "quando": "2026-11-28T18:00:00-03:00",
+   "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C19-o-casulo-do-e-se.mp4",
+   "titulo": "O casulo do \"e se\"",
+   "legenda": "Regra nº 19 da minha rua 🧵 #historias #animacao #ansiedade #mae",
+   "comentario": "Escreve aqui um 'e se der certo' pra você 🤍",
+   "redes": {
+    "instagram": {
+     "status": "pendente"
+    },
+    "youtube": {
+     "status": "pendente"
+    },
+    "tiktok": {
+     "status": "pendente"
+    }
+   }
+  },
+  {
+   "id": "regra-20-as-estatuas-da-praca",
+   "quando": "2026-11-28T21:00:00-03:00",
+   "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C20-as-estatuas-da-praca.mp4",
+   "titulo": "As estátuas da praça",
+   "legenda": "Regra nº 20 da minha rua 🗿 #historias #animacao #familia #avo",
+   "comentario": "Manda um bom dia hoje pra alguém que você não fala faz tempo 🤍",
+   "redes": {
+    "instagram": {
+     "status": "pendente"
+    },
+    "youtube": {
+     "status": "pendente"
+    },
+    "tiktok": {
+     "status": "pendente"
+    }
+   }
+  },
+  {
+   "id": "regra-21-a-nuvem-da-minha-mae",
+   "quando": "2026-11-29T12:00:00-03:00",
+   "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C21-a-nuvem-da-minha-mae.mp4",
+   "titulo": "A nuvem da minha mãe",
+   "legenda": "Regra nº 21 da minha rua 🌧️ #historias #animacao #mae #saudemental",
+   "comentario": "Às vezes a chuva que você sente não é sua. Se precisar conversar, o CVV atende de graça no 188, a qualquer hora 🤍",
+   "redes": {
+    "instagram": {
+     "status": "pendente"
+    },
+    "youtube": {
+     "status": "pendente"
+    },
+    "tiktok": {
+     "status": "pendente"
+    }
+   }
+  },
+  {
+   "id": "regra-22-a-troca-de-pais",
+   "quando": "2026-11-29T18:00:00-03:00",
+   "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C22-a-troca-de-pais.mp4",
+   "titulo": "O dia de trocar de pais",
+   "legenda": "Regra nº 22 da minha rua 🏠 #historias #animacao #familia #infancia",
+   "comentario": "Você trocaria? Por um dia? 🤍",
+   "redes": {
+    "instagram": {
+     "status": "pendente"
+    },
+    "youtube": {
+     "status": "pendente"
+    },
+    "tiktok": {
+     "status": "pendente"
+    }
+   }
+  },
+  {
+   "id": "regra-23-as-borboletas-no-bolso",
+   "quando": "2026-11-29T21:00:00-03:00",
+   "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C23-as-borboletas-no-bolso.mp4",
+   "titulo": "As borboletas no bolso",
+   "legenda": "Regra nº 23 da minha rua 🦋 #historias #animacao #pai #familia",
+   "comentario": "Que elogio você nunca ouviu, e queria ouvir? 🤍",
+   "redes": {
+    "instagram": {
+     "status": "pendente"
+    },
+    "youtube": {
+     "status": "pendente"
+    },
+    "tiktok": {
+     "status": "pendente"
+    }
+   }
+  },
+  {
+   "id": "regra-24-a-menina-do-armario",
+   "quando": "2026-11-30T12:00:00-03:00",
+   "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C24-a-menina-do-armario.mp4",
+   "titulo": "A menina do armário",
+   "legenda": "Regra nº 24 da minha rua 👻 #historias #animacao #mae #familia",
+   "comentario": "Quem você era antes de virar adulto? Conta aqui 🤍",
+   "redes": {
+    "instagram": {
+     "status": "pendente"
+    },
+    "youtube": {
+     "status": "pendente"
+    },
+    "tiktok": {
+     "status": "pendente"
+    }
+   }
+  },
+  {
+   "id": "regra-25-a-loja-de-horas",
+   "quando": "2026-11-30T18:00:00-03:00",
+   "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C25-a-loja-de-horas.mp4",
+   "titulo": "A loja de horas",
+   "legenda": "Regra nº 25 da minha rua ⏳ #historias #animacao #pai #familia",
+   "comentario": "Quantos sábados o seu pai vendeu por você? 🤍",
+   "redes": {
+    "instagram": {
+     "status": "pendente"
+    },
+    "youtube": {
+     "status": "pendente"
+    },
+    "tiktok": {
+     "status": "pendente"
+    }
+   }
+  },
+  {
+   "id": "regra-26-o-fio-do-coracao",
+   "quando": "2026-11-30T21:00:00-03:00",
+   "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C26-o-fio-do-coracao.mp4",
+   "titulo": "O fio do coração",
+   "legenda": "Regra nº 26 da minha rua 🧵 #historias #animacao #adocao #familia",
+   "comentario": "Pra toda família que se escolheu 🤍",
+   "redes": {
+    "instagram": {
+     "status": "pendente"
+    },
+    "youtube": {
+     "status": "pendente"
+    },
+    "tiktok": {
+     "status": "pendente"
+    }
+   }
+  },
+  {
+   "id": "regra-27-o-guarda-chuva",
+   "quando": "2026-12-01T12:00:00-03:00",
+   "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C27-o-guarda-chuva.mp4",
+   "titulo": "O guarda-chuva",
+   "legenda": "Regra nº 27 da minha rua ☂️ #historias #animacao #pai #familia",
+   "comentario": "Quem segura o guarda-chuva em cima de você? 🤍",
+   "redes": {
+    "instagram": {
+     "status": "pendente"
+    },
+    "youtube": {
+     "status": "pendente"
+    },
+    "tiktok": {
+     "status": "pendente"
+    }
+   }
+  },
+  {
+   "id": "regra-28-a-cor-da-lara",
+   "quando": "2026-12-01T18:00:00-03:00",
+   "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C28-a-cor-da-lara.mp4",
+   "titulo": "A cor da Lara",
+   "legenda": "Regra nº 28 da minha rua 🎨 #historias #animacao #familia #irmaos",
+   "comentario": "Quem você precisa escutar hoje, sem olhar o celular? 🤍",
+   "redes": {
+    "instagram": {
+     "status": "pendente"
+    },
+    "youtube": {
+     "status": "pendente"
+    },
+    "tiktok": {
+     "status": "pendente"
+    }
+   }
+  },
+  {
+   "id": "regra-29-a-luz-na-janela",
+   "quando": "2026-12-01T21:00:00-03:00",
+   "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C29-a-luz-na-janela.mp4",
+   "titulo": "A luz na janela",
+   "legenda": "Regra nº 29 da minha rua 🕯️ #historias #animacao #avó #pai",
+   "comentario": "Qual luz você pode acender hoje com uma ligação? 🤍",
+   "redes": {
+    "instagram": {
+     "status": "pendente"
+    },
+    "youtube": {
+     "status": "pendente"
+    },
+    "tiktok": {
+     "status": "pendente"
+    }
+   }
+  },
+  {
+   "id": "regra-30-a-banca-das-lembrancas",
+   "quando": "2026-12-02T12:00:00-03:00",
+   "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C30-a-banca-das-lembrancas.mp4",
+   "titulo": "A banca das lembranças",
+   "legenda": "Regra nº 30 da minha rua 🫙 #historias #animacao #avô #saudade",
+   "comentario": "Qual lembrança você nunca venderia? 🤍",
+   "redes": {
+    "instagram": {
+     "status": "pendente"
+    },
+    "youtube": {
+     "status": "pendente"
+    },
+    "tiktok": {
+     "status": "pendente"
+    }
+   }
+  },
+  {
+   "id": "regra-31-o-muro-entre-irmaos",
+   "quando": "2026-12-02T18:00:00-03:00",
+   "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C31-o-muro-entre-irmaos.mp4",
+   "titulo": "O muro entre irmãos",
+   "legenda": "Regra nº 31 da minha rua 🧱 #historias #animacao #irmaos #familia",
+   "comentario": "Com quem você precisa derrubar um tijolo hoje? 🤍",
+   "redes": {
+    "instagram": {
+     "status": "pendente"
+    },
+    "youtube": {
+     "status": "pendente"
+    },
+    "tiktok": {
+     "status": "pendente"
+    }
+   }
+  },
+  {
+   "id": "regra-32-o-banco-da-praca",
+   "quando": "2026-12-02T21:00:00-03:00",
+   "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C32-o-banco-da-praca.mp4",
+   "titulo": "O banco da praça",
+   "legenda": "Regra nº 32 da minha rua 🍃 #historias #animacao #pai #familia",
+   "comentario": "Se você sentasse no banco, que idade você viraria? 🤍",
+   "redes": {
+    "instagram": {
+     "status": "pendente"
+    },
+    "youtube": {
+     "status": "pendente"
+    },
+    "tiktok": {
+     "status": "pendente"
+    }
+   }
+  }
+ ]
 }
