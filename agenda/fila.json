@@ -265,7 +265,7 @@
     },
     {
       "id": "regra-13-a-fumaca-do-desejo",
-      "quando": "2026-11-26T18:00:00-03:00",
+      "quando": "2026-12-06T12:00:00-03:00",
       "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C13-a-fumaca-do-desejo.mp4",
       "titulo": "A fumaça do desejo",
       "legenda": "Regra nº 13 da minha rua 🎂 #historias #animacao #pai #reflexao",
@@ -637,6 +637,25 @@
         },
         "youtube": {
           "status": "pendente"
+        },
+        "tiktok": {
+          "status": "pendente"
+        }
+      }
+    },
+    {
+      "id": "rua-do-nino-ep2",
+      "quando": "2026-11-26T18:00:00-03:00",
+      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/claude/project-thread-4l109j/videos/novos/N36-a-rua-do-nino-ep2.mp4",
+      "titulo": "A rua do Nino · Ep. 2",
+      "legenda": "A rua do Nino · Ep. 2 🏠 As portas amanheceram pintadas, e a Regra nº 35 apareceu no céu (ideia da Isabelly 💛). Qual era a regra mais estranha da sua casa quando você era criança? As melhores viram episódio. #aruadonino #historias #animacao #familia #infancia",
+      "comentario": "Qual era a regra mais estranha da sua casa quando você era criança? E por quê? 👇",
+      "redes": {
+        "instagram": {
+          "status": "pendente"
+        },
+        "youtube": {
+          "status": "so_manual"
         },
         "tiktok": {
           "status": "pendente"
