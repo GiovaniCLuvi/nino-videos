@@ -11,6 +11,19 @@
   },
   "posts": [
     {
+      "id": "teste-revisao-tiktok-2611",
+      "quando": "2026-11-26T12:50:00-03:00",
+      "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/videos-curtos/C08-as-pedrinhas-da-mentira.mp4",
+      "titulo": "Teste para revisão do app TikTok",
+      "legenda": "Regra nº 8 da minha rua 🪨 #historias #animacao #mae #reflexao",
+      "tiktok_modo": "rascunho",
+      "redes": {
+        "tiktok": {
+          "status": "pendente"
+        }
+      }
+    },
+    {
       "id": "teste-tiktok-rascunho",
       "quando": "2026-11-23T16:30:00-03:00",
       "video": "https://raw.githubusercontent.com/GiovaniCLuvi/nino-videos/refs/heads/claude/project-thread-8oiym3/videos/07-as-pedrinhas-da-mentira.mp4",
