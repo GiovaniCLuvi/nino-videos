@@ -123,6 +123,7 @@ Nunca trocar **recompensa por seguir, curtir ou comentar**. Instagram rebaixa o 
 | Data | Vídeo | O que mudou (uma coisa só) | Resultado às 72 h | Conclusão |
 |---|---|---|---|---|
 | 26/11/2026 | A rua do Nino (regra 34) | Chamada "quem me segue vira vizinho / comenta seu nome" | a medir | **Não repetir a chamada**: é isca de engajamento nas 3 redes. Próximo vídeo do tipo usa a versão segura |
+| 26/11/2026 | Lote "rua-9" (regras 35 a 43, 27 a 29/11) | Série com mundo fixo em 3 posts por dia, pergunta final sobre a família de quem assiste, convite seguro ("as melhores viram episódio") e uma história em 2 partes decidida nos comentários (caixa de correio, 28 e 29/11) | a medir | Comparar seguidores e comentários por mil views com a semana anterior; ver se a parte 1 da caixa gera mais comentários que a média |
 
 ## Histórico
 
