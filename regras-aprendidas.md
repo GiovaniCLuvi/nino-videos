@@ -74,6 +74,7 @@ Nunca trocar **recompensa por seguir, curtir ou comentar**. Instagram rebaixa o 
 - Trilha cresce antes da virada, silêncio antes da frase-chave.
 
 ### 10. Público adulto e "não é para crianças" [política + lei]
+- **Decisão da Gio (26/11/2026): o público-alvo é FAMÍLIA, com os pais como público principal e as crianças junto.** Temas que tocam o adulto (pai cansado, mãe que esconde preocupação, nostalgia de infância) contados pelo Nino. Perguntas finais para o adulto ("Qual era a regra mais estranha da sua casa quando você era criança?", "Seu pai também fazia isso?"). Nomes de comentários na tela: **só o primeiro nome, nunca o @** (muitos comentários de "A rua do Nino" pareciam de crianças). Medir quem comenta por 2 semanas e decidir de vez o caminho.
 - Escrever **para pais e adultos** (nostalgia, reflexão de mãe e pai). Descrição, hashtags e "Sobre" voltados a adultos.
 - No YouTube, marcar **"não é para crianças"** no canal e em cada Short, **desde que** o público seja mesmo adulto (conferir idade nos painéis: meta 70% ou mais com 18+). Nunca marcar errado só para ganhar mais.
 - Nada de criança em perigo, maltratada ou negligenciada como espetáculo. Dor de família com cuidado e resolvida. Temas de saúde mental com o CVV 188 na legenda.
