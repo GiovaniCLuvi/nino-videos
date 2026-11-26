@@ -196,10 +196,15 @@
       "comentario": "Liga hoje pra alguém que tá perdendo letras 🤍",
       "redes": {
         "instagram": {
-          "status": "pendente"
+          "status": "postado",
+          "em": "2026-11-26T12:04-03:00",
+          "id": "18102239408103154",
+          "link": "https://www.instagram.com/reel/DgNYi2Sq29E/",
+          "comentario": "feito (fixar no app)"
         },
         "youtube": {
-          "status": "pendente"
+          "status": "pausada",
+          "motivo": "rede pausada em config.redes_pausadas"
         },
         "tiktok": {
           "status": "manual",
