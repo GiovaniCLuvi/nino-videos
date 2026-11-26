@@ -224,8 +224,7 @@
           "motivo": "rede pausada em config.redes_pausadas"
         },
         "tiktok": {
-          "status": "manual",
-          "motivo": "teste: postado à mão pelo app do TikTok"
+          "status": "pendente"
         }
       }
     },
