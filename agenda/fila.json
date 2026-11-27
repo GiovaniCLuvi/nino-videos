@@ -692,13 +692,24 @@
       "comentario": "E o seu pai? Também falava \"tô bem\" pra tudo? Me conta por quê 🤍",
       "redes": {
         "instagram": {
-          "status": "pendente"
+          "status": "postado",
+          "em": "2026-11-27T12:05-03:00",
+          "id": "17985865335129212",
+          "link": "https://www.instagram.com/reel/DgP9XQzifsE/",
+          "comentario": "feito (fixar no app)"
         },
         "youtube": {
-          "status": "pendente"
+          "status": "pausada",
+          "motivo": "rede pausada em config.redes_pausadas"
         },
         "tiktok": {
-          "status": "pendente"
+          "status": "postado",
+          "em": "2026-11-27T12:05-03:00",
+          "id": "6b099c20e4640e7233604d65",
+          "estado": "published",
+          "modo": "zernio",
+          "conta": "nino.historia",
+          "link": null
         }
       }
     },
