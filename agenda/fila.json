@@ -836,13 +836,24 @@
       "comentario": "Se fosse prefeito da sua rua por um dia, qual seria a primeira lei? 🎂",
       "redes": {
         "instagram": {
-          "status": "pendente"
+          "status": "postado",
+          "em": "2026-11-27T18:05-03:00",
+          "id": "17903659683610945",
+          "link": "https://www.instagram.com/reel/DgQmni3IDWL/",
+          "comentario": "feito (fixar no app)"
         },
         "youtube": {
-          "status": "pendente"
+          "status": "pausada",
+          "motivo": "rede pausada em config.redes_pausadas"
         },
         "tiktok": {
-          "status": "pendente"
+          "status": "postado",
+          "em": "2026-11-27T18:05-03:00",
+          "id": "6b09f08fee7df8c4cfe7f45a",
+          "estado": "published",
+          "modo": "zernio",
+          "conta": "nino.historia",
+          "link": null
         }
       }
     }
