@@ -291,13 +291,24 @@
       "comentario": "Qual balão tá preso no seu teto? 🎈🤍",
       "redes": {
         "instagram": {
-          "status": "pendente"
+          "status": "postado",
+          "em": "2026-11-26T21:04-03:00",
+          "id": "17956635666313527",
+          "link": "https://www.instagram.com/reel/DgOWVscyGSC/",
+          "comentario": "feito (fixar no app)"
         },
         "youtube": {
-          "status": "pendente"
+          "status": "pausada",
+          "motivo": "rede pausada em config.redes_pausadas"
         },
         "tiktok": {
-          "status": "pendente"
+          "status": "postado",
+          "em": "2026-11-26T21:05-03:00",
+          "id": "6b08c922fa4d5c3906318204",
+          "estado": "published",
+          "modo": "zernio",
+          "conta": "nino.historia",
+          "link": null
         }
       }
     },
