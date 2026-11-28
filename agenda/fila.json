@@ -722,13 +722,24 @@
       "comentario": "E a sua mãe? Também sabia de tudo só de olhar? Como ela fazia? 📡",
       "redes": {
         "instagram": {
-          "status": "pendente"
+          "status": "postado",
+          "em": "2026-11-27T21:05-03:00",
+          "id": "18078234881784661",
+          "link": "https://www.instagram.com/reel/DgQ7LpdOdUt/",
+          "comentario": "feito (fixar no app)"
         },
         "youtube": {
-          "status": "pendente"
+          "status": "pausada",
+          "motivo": "rede pausada em config.redes_pausadas"
         },
         "tiktok": {
-          "status": "pendente"
+          "status": "postado",
+          "em": "2026-11-27T21:05-03:00",
+          "id": "6b0a1abf4c978d5f3afa5772",
+          "estado": "published",
+          "modo": "zernio",
+          "conta": "nino.historia",
+          "link": null
         }
       }
     },
