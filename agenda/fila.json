@@ -752,13 +752,24 @@
       "comentario": "Qual brincadeira de rua você fazia que as crianças de hoje nunca viram? Me conta 📵",
       "redes": {
         "instagram": {
-          "status": "pendente"
+          "status": "postado",
+          "em": "2026-11-28T12:05-03:00",
+          "id": "17984875176152842",
+          "link": "https://www.instagram.com/reel/DgSiLcUsvOl/",
+          "comentario": "feito (fixar no app)"
         },
         "youtube": {
-          "status": "pendente"
+          "status": "pausada",
+          "motivo": "rede pausada em config.redes_pausadas"
         },
         "tiktok": {
-          "status": "pendente"
+          "status": "postado",
+          "em": "2026-11-28T12:05-03:00",
+          "id": "6b0aedb80093135448ac901e",
+          "estado": "published",
+          "modo": "zernio",
+          "conta": "nino.historia",
+          "link": null
         }
       }
     },
